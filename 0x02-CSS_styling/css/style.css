@@ -36,7 +36,11 @@ header {
 	min-width: 50%;
 	border-radius: 0.5rem;
 	margin: 1rem auto;
+	text-align: center;
 	padding: 1rem;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
 	
 }
 
@@ -83,8 +87,11 @@ footer {
 	background: #000000;
 	color: #ffffff;
 	text-align: center;
-	margin: 1rem auto;
+	margin: auto;
+	margin-top:4rem ;
 	padding: 0.5rem;
+	width: 28rem;
+	min-width: 50%;
 }
 
 
@@ -102,7 +109,7 @@ footer {
 }
 
 .gallery img:hover {
-	width: 18rem;
+	width: 17rem;
 }
 
 
@@ -130,14 +137,15 @@ footer {
 	width: 6rem;
 	padding: 1rem;
 	background-color: #d32be2;
-	border-radius: 0.5rem;
+	border-radius: 0.2rem;
 	transition: .3s ease all;
+	/* margin: 0 0.5rem; */
  }
 
  #services .button,
  #services h2 {
 	text-align: center;
-	margin-bottom: 1rem;
+	margin: 1rem 0;
  }
 
 
@@ -145,4 +153,5 @@ footer {
 	background: #000000;
 	color: #ffffff;
 	font-weight: bold;
+	padding: 1.2rem 1rem;
  }
