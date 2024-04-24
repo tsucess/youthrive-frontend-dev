@@ -1,0 +1,567 @@
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.5;
+}
+
+/* GENERAL CSS  */
+body {
+  min-width: 100%;
+  margin: 0;
+  font-family: EffraCorp-Regular, Circular Std, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-texts);
+  text-align: left;
+  background: #ffffff;
+}
+
+.container_fluid {
+  min-width: 100%;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.title-1 {
+  font-size: 4.375rem;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
+p {
+  font-size: 1.125rem;
+  color: var(--color-texts);
+}
+
+.btn {
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 0.8rem 3rem;
+  transition: 0.3s ease all;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.btn__primary {
+  color: #212529;
+  height: 45px;
+  padding: 1.2rem 4rem;
+  background-color: #b5d334;
+  border-color: #b5d334;
+}
+.btn__secondary {
+  color: #212529;
+  background-color: #ff8200;
+  border-color: #ff8200;
+}
+
+.btn__tertiary {
+  color: #ffffff;
+  background-color: #003626;
+  border-color: #003626;
+}
+
+.title-2 {
+  font-size: 2rem;
+  line-height: 1.10344;
+  letter-spacing: -1px;
+}
+
+.title-3 {
+  font-size: 2.5rem;
+  line-height: 1.16666;
+  letter-spacing: -0.03px;
+}
+
+.title-4 {
+  font-size: 1.525rem;
+  line-height: 1.416666;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.title {
+  color: #1d293f;
+  text-align: center;
+}
+
+.title > p {
+  max-width: 100%;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 1rem;
+}
+.title > p span.yo {
+  color: #f77321;
+  font-weight: 500;
+}
+.title > p span.thr {
+  color: #014086;
+  font-weight: 500;
+}
+
+.content-1 {
+  font-size: 1.3125rem;
+  line-height: 1.61904;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* NAV CSS  */
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 0.1rem 0.8rem #7c808721;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0.5rem 2.1875rem;
+  max-width: 100%;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.navbar .brand {
+  margin: 0 auto;
+}
+
+.navbar .brand img {
+  max-width: 10rem;
+  height: 3.75;
+  margin: 0.4rem;
+}
+
+.navbar .nav_items .nav_links {
+  display: inline-block;
+}
+
+.navbar .nav_links ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.navbar .nav_links ul li {
+  list-style: none;
+  padding: 0.4rem;
+}
+
+.navbar .nav_links ul li a {
+  color: #1d293f;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+
+
+/* HERO CSS  */
+.hero__section {
+  max-width: 100%;
+  margin: 2rem 0;
+  margin-bottom: 0;
+  height: 100vh;
+  background-color: #0a0a0b;
+  background-image: url("../images/hero-5d0a96a7fc5f914dab4822a9574e4d3f.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero__info {
+  position: absolute;
+  color: #ffffff;
+  margin: 4rem auto;
+  padding: 1rem;
+  min-width: 20rem;
+}
+
+.hero__title {
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+ span.you {
+  color: #f77321;
+  font-weight: 500;
+  background-color: #ffffff60;
+  padding: 0.75rem;
+  padding-top: 0rem;
+  border-radius: 0.6rem;
+}
+ span.thrive {
+  color: #014086;
+}
+
+.hero__content p {
+  line-height: 1.61904;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+
+
+/* PARTNERS CSS  */
+.partners__section {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  background-color: #f5f7ec;
+}
+
+.partners_brands {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.partners__section img {
+  max-width: 15rem;
+}
+
+.partners__section .main_brand {
+  margin: 3rem auto;
+}
+
+.partners__section .main_brand p {
+  font-size: 2rem;
+}
+.partners__section .other_brands {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  min-width: 90%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.partners__section .other_brands img {
+  width: 4rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+
+
+
+/* PILLARS CSS  */
+.pillars__section {
+  background-color: #f5f7ec;
+  margin: auto;
+}
+
+.pillars__section .pillar {
+  width: 18rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.pillars__section .pillar a {
+  color: #212529;
+}
+
+.pillars__section .pillar .pillar_icon {
+  width: 6.0625rem;
+  height: 6.0625rem;
+  background-color: #003626;
+  text-align: center;
+  border-radius: 0.625rem;
+  margin: 2rem auto;
+}
+
+.pillars__section .pillar .pillar_icon img {
+  margin: 2rem auto;
+}
+
+.pillars__section .pillars_content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.pillars__section .pillars_content p {
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+/* BENEFIT SECTION CSS  */
+
+.benefit__section {
+  margin: 3rem auto;
+}
+
+.benefit__section .title {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.benefit__section .title p {
+  width: 100%;
+  padding: 1rem;
+}
+
+.benefit_info {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.banner {
+  position: relative;
+  height: 25rem;
+}
+
+.banner .main__banner6 {
+	position: absolute;
+	width: 95%;
+	left: 0;
+	top: 2rem;
+}
+
+.benefit_contents {
+  	width: 100%;
+}
+
+.benefit_contents .title {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.benefit_contents .title > h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+
+.benefit_contents .title > p {
+  text-align: left;
+  padding: 0;
+}
+
+.benefit_contents .contents {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.benefit_contents .contents ul li {
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+/* COMMUNTIY SECTION CSS */
+.community_section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-top: 10rem;
+  padding: 2rem 1rem;
+  background-color: #f5f7ec;
+  align-items: last center;
+}
+
+.community_info {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.community_info p {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.community_btn {
+  margin: 0 auto;
+}
+
+
+
+
+/* FOOTER CSS  */
+footer.footer__section {
+background-color: #f5f7ec;
+  padding: 1rem 2rem;
+  text-align: center;
+
+}
+
+.footer__section .footer__brand img {
+  width: 10rem;
+  margin: 1rem auto;
+}
+
+.footer__section .footer__info {
+	display: flex;
+	flex-flow: column;
+	border-top: 1px solid #b3b3b3b9 ;
+	padding: 1rem 0;
+  }
+
+.footer__info .copyright p {
+	margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.footer__section .footer__info .footer_nav ul {
+  margin-top: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer__section
+.footer__info .footer_nav ul li {
+		font-weight: 600;
+	}
+
+
+/* ------------------------------
+ 		About PAGE 
+------------------------------ */
+
+.about__section {
+	margin: 3rem auto;
+}
+.mission__section {
+	background-color: #f5f7ec;
+	padding: 4rem 0;
+}
+.mission__section p{
+	font-size: 0.9rem;
+}
+
+.mission_content {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.mission_content p {
+	padding: 0.2rem 0;
+}
+
+.mission {
+	width: 12rem;
+	margin: 0.8rem auto;
+}
+
+/* vision SECTION CSS  */
+
+.vision__section {
+  margin: 3rem auto;
+}
+.vision__section p {
+  font-size: 0.9rem;
+}
+
+.vision__section .title {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.vision__section .title p {
+  width: 100%;
+  padding: 1rem;
+}
+
+.vision_info {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.banner {
+  position: relative;
+  height: 25rem;
+}
+
+
+.banner .main__banner6 {
+	position: absolute;
+	width: 95%;
+	left: 0;
+	top: 0rem;
+}
+
+.vision_contents {
+  	width: 100%;	
+}
+
+.vision_contents .title {
+  margin-top: 0rem;
+  text-align: center;
+}
+
+.vision_contents .title > h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+
+.vision_contents .title > p {
+  text-align: left;
+  padding: 0;
+}
+
+.vision_contents .contents {
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+}
+.vision_contents .contents ul li {
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+.vision_btn {
+	text-align: center;
+}

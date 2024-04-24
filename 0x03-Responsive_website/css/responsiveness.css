@@ -1,0 +1,372 @@
+/* Responsiveness for all Devices  */
+
+/* Small devices (Android) CSS  */
+@media screen and (min-width: 375px) {
+  .benefit__section .title {
+    width: 90%;
+  }
+
+  .banner {
+	height: 28rem;
+  }
+  .benefit_contents .title {
+    width: 100%;
+  }
+
+  .benefit_contents .title p {
+    width: 100%;
+    padding: 0;
+  }
+
+  .community_info {
+    width: 90%;
+  }
+
+  .vision__section .title {
+    width: 90%;
+  }
+
+  .vision_contents .title {
+    width: 100%;
+	margin-top: 1rem;
+  }
+
+  .vision_contents .title p {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .hero__info {
+    padding: 2rem;
+    min-width: 25rem;
+  }
+  .banner {
+	height: 32rem;
+  }
+
+
+  /* About page  */
+  .mission_content {
+	flex-flow: row wrap;
+}
+.curriculum ul {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1;
+}
+.curriculum ul li{
+	margin: 0.5rem 1rem
+}
+ 
+}
+
+
+
+
+/* Medium devices (Tablet) CSS  */
+@media screen and (min-width: 768px) {
+  .title-2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .title-3 {
+    font-size: 2.5rem;
+  }
+
+  .title-4 {
+    font-size: 2rem;
+  }
+
+  .hero__info {
+    width: 32.625rem;
+    margin-top: 8rem;
+  }
+
+  .hero__title {
+    font-size: 2.375rem;
+    letter-spacing: -1px;
+  }
+
+  .hero__content p {
+    font-size: 1.3125rem !important;
+    margin-bottom: 2rem;
+  }
+
+  .title > p {
+    width: 50%;
+    margin: 1rem auto;
+  }
+
+  .navbar {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .navbar .brand {
+    margin: 0;
+  }
+
+  .navbar .brand img {
+    width: 8rem;
+  }
+
+  .navbar .nav_links ul {
+    margin: 0.8rem 0;
+  }
+
+  .hero__info {
+    padding-left: 4rem;
+    width: 30rem;
+  }
+
+  .pillars__section .pillar {
+    margin: 2rem;
+    width: 14rem;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .pillars__section .pillar.p-top-2 {
+    padding-top: 2rem;
+  }
+
+  .pillars__section .pillar.p-top-3 {
+    padding-top: 4rem;
+  }
+
+  .pillars__section .pillar.p-top-4 {
+    padding-top: 8rem;
+  }
+
+  .pillars__section .pillar .pillar_icon {
+    margin: 1rem 0;
+  }
+  .pillars__section .pillars_content p {
+    padding: 0rem;
+  }
+
+  .benefit__section .title {
+    width: 70%;
+  }
+
+  .benefit_info {
+    flex-flow: row;
+  }
+
+  .benefit_contents {
+    width: 50%;
+  }
+  .benefit_contents .title {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .banner {
+    width: 50%;
+	margin-right: 1rem;
+  }
+  .banner .main__banner6 {
+	top: 1.5rem;
+	left: 1.5rem;
+	width: 90%;
+	
+}
+
+  .community_section {
+    flex-flow: row;
+  }
+
+  .community_info {
+    width: 60%;
+    text-align: left;
+    padding: 2rem;
+  }
+
+  footer.footer__section {
+    text-align: left;
+  }
+
+  .footer__section .footer__info {
+    display: flex;
+    flex-flow: row;
+  }
+  .footer__section .footer__info .copyright p {
+    width: 60%;
+  }
+
+
+/* ABOUT CSS  */
+.mission {
+	margin: 3rem;
+}
+
+
+
+.vision__section .title {
+    width: 70%;
+  }
+
+  .vision_info {
+    flex-flow: row;
+
+  }
+
+  .vision_contents {
+    width: 50%;
+  }
+  .vision_contents .title {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .vision_contents .contents {
+	margin-bottom: 0rem;
+  }
+  .vision_btn {
+	text-align: right;
+}
+
+}
+
+
+
+
+
+/* LARGE SCREEN SIZE  */
+@media screen and (min-width: 1024px) {
+  .title-2 {
+    font-size: 3.625rem;
+  }
+
+  .title-3 {
+    font-size: 3rem;
+  }
+
+  .title-4 {
+    font-size: 2.3rem;
+  }
+
+
+
+
+.pillars__section .pillar {
+		width: 10rem;
+		margin: 1rem 1.2rem;
+		margin-bottom: 3rem;
+  }
+  .pillars__section .pillar.p-top-2 {
+    padding-top: 4rem;
+  }
+
+  .pillars__section .pillar.p-top-3 {
+    padding-top: 8rem;
+  }
+
+  .pillars__section .pillar.p-top-4 {
+    padding-top: 16rem;
+  }
+
+  .benefit_contents .title > h2 {
+	font-size: 2.3rem;
+}
+
+  .benefit_info {
+	padding: 0 4rem;
+	margin-bottom: 6rem;
+	padding: 0;
+  }
+
+  .banner {
+	width: 30%;
+	height: 40rem;
+  }
+
+  .banner .main__banner6 {
+	width: 80%;
+	left: 2rem;
+}
+ 	
+	.benefit_contents{
+		width: 40%;
+	}
+	
+	.community_section {
+		padding: 2rem 3rem;
+	}
+
+	.community_info {
+		width: 60%;
+	}
+
+	footer.footer__section{
+		padding: 1rem 5rem;
+	}
+	
+	.footer__section
+	.footer__brand img {
+		width: 14rem;
+	}
+
+	.footer__section
+	.footer__info {
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	.footer__section .footer__info .copyright p {
+		width: 100%;
+	  }
+	
+	.footer__section
+	.footer__info .footer_nav ul {
+		width: 50%;
+	}
+
+	
+/* ABOUT CSS  */
+.mission {
+	width: 13rem;
+	margin: 1rem;
+}
+
+.mission .title-2 {
+	margin: 0;
+	font-size: 2.5rem;
+}
+.mission > p {
+	/* font-size: 0.rem; */
+	width: 12rem;
+}
+
+
+.vision_contents .title > h2 {
+	font-size: 2.3rem;
+}
+
+  .vision_info {
+	padding: 0 4rem;
+	margin-bottom: 1rem;
+	padding: 0;
+  }
+.vision__section .banner {
+	height: 35rem;
+}
+.vision__section .banner.special {
+	height: 25rem;
+}
+	.vision_contents{
+		width: 40%;
+		height: 30rem;
+	}
+
+}
+
+@media screen and (min-width: 1440px) {
+
+	.benefit_contents{
+		width: 30%;
+	}
+	.vision__section .banner.special {
+		height: 35rem;
+	}
+}
