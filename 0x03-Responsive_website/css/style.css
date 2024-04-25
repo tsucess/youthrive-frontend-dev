@@ -531,6 +531,8 @@ background-color: #f5f7ec;
 
 .vision_contents {
   	width: 100%;	
+    /* background-color: #003626; */
+    margin-bottom: 2rem;
 }
 
 .vision_contents .title {
