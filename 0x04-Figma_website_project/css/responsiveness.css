@@ -1,0 +1,377 @@
+/* SMALL SCREEN (ANDROID MOBILE) */
+@media screen and (min-width: 375px) {
+  main .hero-section .info {
+    display: flex;
+  }
+
+  main .hero-bg {
+    display: none;
+  }
+
+  main .info-section {
+    background-size: 75%;
+    background-position: 50% 10%;
+    padding: 3.5rem 3rem;
+  }
+
+  main .info-section .btn {
+    margin-top: 4rem;
+  }
+}
+
+
+/* MEDIUM SCREEN (TABLET) */
+@media screen and (min-width: 768px) {
+  .nav-section .navbar {
+    gap: 25rem;
+  }
+
+  main .hero-section {
+    background-color: #d7d7d7;
+    background-image: url("../images/Rectangle-lg.png");
+    background-size: 60% 100%;
+    background-position: right;
+    flex-flow: row;
+    height: 100vh;
+    margin-top: -7rem;
+  }
+  main .hero-section .info {
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 8rem;
+  }
+  main .hero-section .info .separator {
+    display: none;
+  }
+
+  .info-lg .profile-img {
+    display: block;
+  }
+  main .hero-section .info .hero-info {
+    margin-bottom: 2rem;
+  }
+
+  main .hero-section .hero-info p {
+    color: #000000;
+  }
+
+  main .hero-section .hero-info h3 {
+    color: #000000;
+    margin: 1rem auto;
+  }
+
+  main .hero-section .info .social_icon {
+    margin-left: 0;
+  }
+  .hero-section .social_icon a {
+    background-color: #c4c4c4;
+    padding: 0.4rem;
+    box-shadow: 0.02rem 0.1rem 0.3rem 0.02rem #00000040;
+  }
+  .hero-section .social_icon a i {
+    border-radius: 50%;
+    color: #000000;
+    font-size: 1.4rem;
+  }
+
+  main .info-section {
+    background-image: url("../images/logo-ITB.png");
+    background-repeat: no-repeat;
+    background-position: 125% 0%;
+    background-size: 40%;
+    text-align: left;
+    padding: 1.5rem 2rem;
+    padding-right: 14rem;
+  }
+
+  main .info-section p {
+    font-size: 0.7rem;
+  }
+  main .info-section .btn {
+    margin-top: 0.8rem;
+  }
+
+  /* ABOUT SECTION  */
+  main .about-section .heading {
+    width: 12rem;
+  }
+
+  main .about-section {
+    padding: 2rem 6rem;
+  }
+  main .about-section > p {
+    width: 36rem;
+  }
+
+  main .about-section .abilities {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    width: 34rem;
+    margin: 0;
+  }
+
+  main .about-section .ability {
+    width: 48%;
+  }
+
+  /* Skill section   */
+
+  main .skill-section {
+    text-align: left;
+    padding: 1rem 6rem;
+  }
+
+  main .skill-section .heading {
+    width: 10rem;
+  }
+
+  main .skill-section .row {
+    width: 34rem;
+  }
+  main .skill-section .row .title h2 {
+    font-size: 1.2rem;
+  }
+
+  main .skill-section .row .skills {
+    flex-flow: row wrap;
+    text-align: center;
+  }
+
+  main .skill-section .row .skills .skill {
+    width: 20%;
+  }
+
+  main .skill-section .row .skills .skill .skill_icon {
+    width: 4rem;
+  }
+  main .skill-section .row .skills .skill .skill_icon.mongo {
+    width: 2rem;
+  }
+  main .skill-section .row .skills .skill p {
+    font-size: 1rem;
+  }
+
+  /* PORTFOLIO SECTION  */
+  main .portfolio-section .top {
+    background-image: url("../images/header.png");
+  }
+
+  main .portfolio-section .top .heading {
+    width: 13rem;
+  }
+
+  main .portfolio-section .portfolios .portfolio-btns {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+
+  main .portfolio-section .portfolios .portfolio-btns .btn-opt {
+    padding: 0.5rem;
+    text-align: center;
+    width: 12%;
+    margin: 0rem;
+  }
+
+  main .portfolio-section .portfolios .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0;
+  }
+  main .portfolio-section .portfolios .gallery .pic-1 .info{
+    display: none;
+  }
+  main .portfolio-section .portfolios .gallery .pic-2 .info{
+    display: flex;
+  }
+  main .portfolio-section .portfolios .gallery .pic {
+    width: 33.3%;
+    height: 14rem;
+    padding: 1.2rem;
+  }
+  main .portfolio-section .portfolios .gallery .pic p {
+    font-size: 0.6rem;
+  }
+  main .portfolio-section .portfolios .gallery .pic .buttons .btn {
+    width: 5rem;
+    padding: 0.5rem;
+    border: 0.1rem solid #ffffff;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  /* CONTACT SECTION CSS  */
+
+  main .contact-section {
+    padding: 4rem;
+    padding-bottom: 0rem;
+  }
+  main .contact-section p {
+    width: 32rem;
+  }
+
+  main .contact-section form {
+    width: 30rem;
+  }
+
+  main .contact-section .heading {
+    width: 12rem;
+    margin: 2rem auto;
+  }
+
+  /* FOOTER SECTION   */
+  .footer-section {
+    padding: 1.5rem;
+  }
+
+  .footer-section .footer-socials {
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+  }
+
+  .footer-section .copyright {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+
+/* LARGE SCREEN  (LAPTOP)*/
+@media screen and (min-width: 1024px) {
+  .nav-section {
+    background: transparent;
+    margin-top: 1rem;
+    animation: scroll-nav linear;
+    animation-timeline: scroll();
+  }
+
+
+  @keyframes scroll-nav {
+    to {
+      background: #000000;
+      opacity: 1;
+    }
+    
+  }
+  .nav-section .navbar {
+    background: transparent;
+    align-items: center;
+    gap: 16rem;
+  }
+
+
+
+
+  .nav-section .navbar .nav-item {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-flow: row;
+    box-shadow: none;
+    right: 0;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .nav-section .navbar .navbar-brand {
+    margin-left: 6rem;
+  }
+
+  .nav-section .navbar .navbar-brand .logo-white {
+    display: none;
+  }
+
+  .nav-section .navbar .navbar-brand .logo-black {
+    display: block;
+  }
+
+  .nav-section .navbar .nav-item ul {
+    /* background-color: transparent; */
+    flex-flow: row;
+    gap: 2rem;
+    box-shadow: none;
+    margin: 0;
+    margin-right: 1rem;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+
+  .contact-btn {
+    background: none;
+    width: 8rem;
+    margin: 0;
+  }
+
+  .contact-btn a {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  /* HERO SECTION CSS  */
+  .info-lg {
+    gap: 2rem;
+    width: 90%;
+  }
+
+  main .hero-section .info {
+    margin-left: 0rem;
+  }
+
+ 
+
+  main .hero-section .hero-info p {
+    font-size: 1.5625rem;
+  }
+
+  main .hero-section .hero-info h3 {
+    font-size: 2rem;
+  }
+
+  main .info-section {
+    padding: 2rem 4rem;
+  }
+  main .info-section p {
+    width: 62%;
+    margin-left: 0;
+  }
+
+  /* ABOUT SECTION  */
+  main .about-section > p {
+    width: 48rem;
+  }
+
+  main .about-section .abilities {
+    width: 52rem;
+    margin: 0 auto;
+  }
+
+  main .skill-section .row {
+    width: 48rem;
+  }
+
+  main .skill-section .row .skills {
+    gap: 1rem;
+  }
+}
+
+
+/* XLARGE SCREEN */
+@media screen and (min-width: 1440px) {
+  /* .info-lg .profile-img {
+    width: 40rem;
+  } */
+
+  .info-lg .profile-img {
+    width: 33rem;
+  }
+
+  main .portfolio-section .portfolios .gallery .pic {
+    height: 18rem;
+  }
+}
