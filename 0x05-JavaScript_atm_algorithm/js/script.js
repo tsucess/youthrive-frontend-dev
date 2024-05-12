@@ -162,7 +162,7 @@ let performTransaction = (trans, sender, acctpin) => {
 						benName = acct.acct_name;
 						benAccount = acct.acct_no;
 						benBank = acct.bank;
-						// benBalance = acct.acct_bal;
+						benBalance = acct.acct_bal;
 						amount = Number(prompt("Please Enter Transfer amount"));
 						confirm(`Confirm Details \n\n Beneficiaries Name: ${benName}\n Beneficiaries Account: ${benAccount}\n Beneficiaries Bank:${bankList(benBank)} \n Amount: #${amount}`);
 						acct.acct_bal = benBalance + amount;
@@ -172,7 +172,7 @@ let performTransaction = (trans, sender, acctpin) => {
 						alert("Invalid account details")
 					}
 				}
-				
+
 				if (acct.acct_no === sender) {
 					senderName = acct.acct_name;
 					senderAccount = acct.acct_no;
