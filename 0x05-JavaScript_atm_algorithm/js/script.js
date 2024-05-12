@@ -1,5 +1,3 @@
-
-
 // let userAccount = [];
 let userAccount = [
 	{
@@ -29,14 +27,14 @@ let userAccount = [
 	{
 		"acct_id": 4,
 		"acct_name": "ELIZABETH ADAMU",
-		"acct_no": "0024242525",
+		"acct_no": "0022334455",
 		"bank": 4,
 		"acct_pin": 1234,
 		"acct_bal": 20000
 	}
 ];
 
-let lastId = userAccount.length;
+let lastId;
 let bBank;
 let amount;
 
@@ -46,7 +44,6 @@ let amount;
 alert("Welcome to Ultimate Bank");
 let option;
 
-ultimateBank();
 
 // BANK MENU FUNCTION 
 let ultimateBank = () => {
@@ -58,9 +55,10 @@ let ultimateBank = () => {
 		// Create Account 
 		let firstName = prompt("Enter your first name");
 		let lastName = prompt("Enter your last name");
+
 		createAccount(lastId, firstName, lastName, generateAccountNo());
 		lastId === userAccount.length;
-		alert(`Account created successfully \n\nAccount Details: \nAccount Name: ${userAccount[lastId].acct_name}\nAccount Number: ${userAccount[lastId].acct_no} \nBANK: ${userAccount[lastId].bank} \nAccount Pin: ${userAccount[lastId].acct_pin}`);
+		alert(`Account created successfully \n\nAccount Details: \nAccount Name: ${userAccount[lastId].acct_name}\nAccount Number: ${userAccount[lastId].acct_no} \nBANK: ${bankList(userAccount[lastId].bank)} \nAccount Pin: ${userAccount[lastId].acct_pin}`);
 		ultimateBank();
 	}
 	else if (option === 2) {
@@ -76,7 +74,7 @@ let ultimateBank = () => {
 		ultimateBank();
 	}
 	else if (option === 0) {
-		exit();
+		// exit();
 	}
 	else {
 		alert(" Invalid Input Try Again!");
@@ -88,20 +86,17 @@ let ultimateBank = () => {
 
 
 
-
-
-
-
-
-
-
 /************************** 
-// FEATURES FUNTIONS
-***************************
-*/ 
+ // FEATURES FUNTIONS
+ ***************************
+ */ 
 let generateAccountNo = () => {
-	let startAcct = 22334455;
-	let genAccount = startAcct + 2
+	lastId = userAccount.length;
+	// let startAcct = 22334455;
+	let lastAccount = userAccount[lastId - 1].acct_no;
+	let startAcct = Number(lastAccount.slice(2));
+	console.log(startAcct);
+	let genAccount = startAcct + 2;
 	let accountNo = "00" + genAccount;
 	return accountNo;
 }
@@ -113,7 +108,7 @@ let createAccount = (lastId, firstName, lastName, acctNo) => {
 			"acct_id": lastId,
 			"acct_name": `${firstName} ${lastName}`,
 			"acct_no": acctNo,
-			"bank": "ULTIMATE",
+			"bank": 2,
 			"acct_pin": 1234,
 			"acct_bal": 0,
 		}
@@ -129,10 +124,10 @@ let confirmAccount = (account_no, option) => {
 			if (option === 2) {
 				opin = Number(prompt("Please enter your pin"));
 				let prevpin = item.acct_pin;
-				changePin(prevpin, opin);
+				changePin(account_no, prevpin, opin);
 			}
 			else if (option === 3) {
-				let transaction = Number(prompt("Options \n1 - Transfer \n2 - Check Balance \n0 - Exit"));
+				let transaction = Number(prompt("Options \n1 - Transfer \n2 - Deposit \n3 - Check Balance\n0 - Exit"));
 				performTransaction(transaction, item.acct_no, item.acct_pin)
 
 			}
@@ -169,7 +164,7 @@ let performTransaction = (trans, sender, acctpin) => {
 						benBank = acct.bank;
 						// benBalance = acct.acct_bal;
 						amount = Number(prompt("Please Enter Transfer amount"));
-						confirm(`Confirm Details \n\n Beneficiaries Name: ${benName}\n Beneficiaries Account: ${benAccount}\n Beneficiaries Bank:${benBank} \n Amount: ${amount}`);
+						confirm(`Confirm Details \n\n Beneficiaries Name: ${benName}\n Beneficiaries Account: ${benAccount}\n Beneficiaries Bank:${bankList(benBank)} \n Amount: #${amount}`);
 						acct.acct_bal = benBalance + amount;
 						benBalance = acct.acct_bal;
 					}
@@ -177,34 +172,31 @@ let performTransaction = (trans, sender, acctpin) => {
 						alert("Invalid account details")
 					}
 				}
-
-
+				
 				if (acct.acct_no === sender) {
 					senderName = acct.acct_name;
 					senderAccount = acct.acct_no;
 					senderBank = acct.bank;
 					senderBal = acct.acct_bal;
-
 				}
-
 			});
 
 			if (senderBal > amount) {
 				senderBal = senderBal - amount;
 				alert(`Transfer of ${amount} was successful \nThank you for Banking with us!`);
-				alert(`Sender Account Name:  ${senderName}\nSender Account Number: ${senderAccount}\nSender Balance: ${senderBal}\n\n Beneficiaries Account Name: ${benName} \nBeneficiaries Account Number: ${benAccount}\nBeneficiaries Bank: ${benBank}\n Beneficiaries Balance ${benBalance}`);
+				alert(`Sender Account Name:  ${senderName}\nSender Account Number: ${senderAccount}\nSender Balance: #${senderBal}\n\nBeneficiaries Account Name: ${benName} \nBeneficiaries Account Number: ${benAccount}\nBeneficiaries Bank: ${bankList(benBank)}\nBeneficiaries Balance #${benBalance}`);
 			}
 			else {
 				alert("Insufficient Balance");
 			}
 		}
 	}
-	else if (trans === 2) { // CHECK ACCOUNT BALANCE AND DETAILS
+	else if (trans === 3) { // CHECK ACCOUNT BALANCE AND DETAILS
 		let pin = Number(prompt("Enter your pin"));
 		userAccount.forEach(acct => {
 			if (acct.acct_no === sender) {
 				if (acct.acct_pin === pin) {
-					alert(`Your Account Details: \n\nAccount Name: ${acct.acct_name}\nAccount Number: ${acct.acct_no}\nBank Name: ${bankList(acct.bank)} \nAccount Balance: ${acct.acct_bal}`);
+					alert(`Your Account Details: \n\nAccount Name: ${acct.acct_name}\nAccount Number: ${acct.acct_no}\nBank Name: ${bankList(acct.bank)} \nAccount Balance: # ${acct.acct_bal}`);
 				}
 				else {
 					alert("Incorrect pin, you have 2 trials left, or your accound would be blocked")
@@ -212,15 +204,15 @@ let performTransaction = (trans, sender, acctpin) => {
 			}
 		});
 	}
-	else if (trans === 3) { // DEPOSIT
+	else if (trans === 2) { // DEPOSIT
 		let pin = Number(prompt("Enter your pin"));
 		userAccount.forEach(acct => {
 			if (acct.acct_no === sender) {
 				if (acct.acct_pin === pin) {
 					confirm(`Your Account Details: \n\nAccount Name: ${acct.acct_name}\nAccount Number: ${acct.acct_no}\nBank Name: ${bankList(acct.bank)} \nAccount Balance: ${acct.acct_bal}`);
-					let deposit = prompt("Enter the Amount you wish to Deposit");
+					let deposit = Number(prompt("Enter the Amount you wish to Deposit"));
 					acct.acct_bal += deposit;
-					alert(`You have successfully deposited ${deposit} into you Account \nThank you for Banking with us!`);
+					alert(`You have successfully deposited # ${deposit} into your Account \nThank you for Banking with us!`);
 				}
 				else {
 					alert("Incorrect pin, you have 2 trials left, or your accound would be blocked")
@@ -231,13 +223,17 @@ let performTransaction = (trans, sender, acctpin) => {
 }
 
 
-let changePin = (prevpin, oldpin) => {
+let changePin = (account_no, prevpin, oldpin) => {
 	if (prevpin === oldpin) {
 		let newpin = Number(prompt("Please enter New pin"));
 		let confirmpin = Number(prompt("Please confirm pin"));
 		if (newpin === confirmpin) {
-			prevpin = confirmpin;
-			alert(`Your pin has been changed successfully\n Old pin: ${oldpin} \n New pin: ${prevpin}`);
+			userAccount.forEach(item => {
+				if (item.acct_no === account_no) {
+						item.acct_pin = confirmpin;
+				}
+			});
+			alert(`Your pin has been changed successfully\n Old pin: ${oldpin} \n New pin: ${confirmpin}`);
 		}
 	}
 }
@@ -269,3 +265,4 @@ let bankList = (bankId) => {
 
 
 
+ultimateBank();
