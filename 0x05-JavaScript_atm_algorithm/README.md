@@ -6,3 +6,11 @@
 ## TECHNOLOGIES
 * HTML5
 * Js
+
+## FEATURES THE SYSTEM CAN HANDLE
+* Create Account
+* Change Pin
+* Perform Transactions
+	- Transfer
+	- Deposit
+	- Check Balance
