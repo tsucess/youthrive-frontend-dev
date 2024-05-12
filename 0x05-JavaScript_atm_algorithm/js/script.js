@@ -217,39 +217,41 @@ let bankList = (bankId) => {
 alert("Welcome to Ultimate Bank");
 let option;
 option = Number(prompt("Options \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n 0 - Exit"));
+ultimateBank(option);
 
-if (isNaN(option)) {
-	option = Number(prompt(" Invalid Input Try Again! \n\n Options \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n 0 - Exit"));
+// BANK MENU FUNCTION 
+let ultimateBank = (option) => {
+	if (isNaN(option)) {
+		option = Number(prompt(" Invalid Input Try Again! \n\n Options \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n 0 - Exit"));
+		ultimateBank(option);
+	}
+	else if (option === 1) {
+		// Create Account 
+		let firstName = prompt("Enter your first name");
+		let lastName = prompt("Enter your last name");
+		createAccount(lastId, firstName, lastName, generateAccountNo());
+		lastId === userAccount.length;
+		alert(`Account created successfully \n\nAccount Details: \nAccount Name: ${userAccount[lastId].acct_name}\nAccount Number: ${userAccount[lastId].acct_no} \nBANK: ${userAccount[lastId].bank} \nAccount Pin: ${userAccount[lastId].acct_pin}`);
+		option = Number(prompt("Options \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n 0 - Exit"));
+		ultimateBank(option);
+	}
+	else if (option === 2) {
+		// To Change Pin
+		let account_no = prompt("Please enter your card by Typing Account Number");
+		confirmAccount(account_no, option);
+		option = Number(prompt("Options \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n 0 - Exit"));
+		ultimateBank(option);
+	}
+	else if (option === 3) {
+		// To Perform Transaction 
+		let account_no = prompt("Please enter your card by Typing Account Number");
+		confirmAccount(account_no, option);
+	}
+	else if (option === 0) {
+		exit();
+	}
+	else {
+		option = Number(prompt(" Invalid Input Try Again! \n\n Options \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n 0 - Exit"));
+		ultimateBank(option);
+	}
 }
-else if (option === 1) {
-	// Create Account 
-	let firstName = prompt("Enter your first name");
-	let lastName = prompt("Enter your last name");
-	createAccount(lastId, firstName, lastName, generateAccountNo());
-	lastId === userAccount.length;
-	alert(`Account created successfully \n\nAccount Details: \nAccount Name: ${userAccount[lastId].acct_name}\nAccount Number: ${userAccount[lastId].acct_no} \nBANK: ${userAccount[lastId].bank} \nAccount Pin: ${userAccount[lastId].acct_pin}`);
-	option = Number(prompt("Options \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n 0 - Exit"));
-}
-else if (option === 2) {
-	// To Change Pin
-	let account_no = prompt("Please enter your card by Typing Account Number");
-	confirmAccount(account_no, option);
-	option = Number(prompt("Options \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n 0 - Exit"));
-}
-else if (option === 3) {
-	// To Perform Transaction 
-	let account_no = prompt("Please enter your card by Typing Account Number");
-	// let pin = Number(prompt("Please enter your pin"));
-	confirmAccount(account_no, option);
-}
-else if (option === 0) {
-	exit();
-}
-else {
-	option = Number(prompt(" Invalid Input Try Again! \n\n Options \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n 0 - Exit"));
-}
-
-
-// Errorchecker
-// isNaN()
-// throw Error( `Error ${}`)
