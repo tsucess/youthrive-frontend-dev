@@ -1,0 +1,29 @@
+[
+	{
+		"acct_id": 1,
+		"acct_name": "OGUNSANYA TAOFEEQ",
+		"acct_number": "0023234545",
+		"gender": "Male",
+		"acct_bal": 200000
+	},
+	{
+		"acct_id": 2,
+		"acct_name": "MARY MICHAEL",
+		"acct_number": "0022224444",
+		"acct_bal": 100000
+	},
+	{
+		"acct_id": 3,
+		"acct_name": "SAMUEL KABIR",
+		"acct_number": "0033335555",
+		"bank": "ACCESS",
+		"acct_bal": 25000
+	},
+	{
+		"acct_id": 4,
+		"acct_name": "ELIZABETH ADAMU",
+		"acct_number": "0024242525",
+		"bank": "UBA",
+		"acct_bal": 20000
+	}
+]
