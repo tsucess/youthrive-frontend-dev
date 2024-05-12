@@ -47,7 +47,7 @@ let option;
 
 // BANK MENU FUNCTION 
 let ultimateBank = () => {
-	option = Number(prompt("Home Menu \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n 0 - Exit"));
+	option = Number(prompt("Home Menu \n1 - Create an Account\n2 - Change Pin \n3 - Perform Transaction \n0 - Exit"));
 	if (isNaN(option)) {
 		ultimateBank();
 	}
