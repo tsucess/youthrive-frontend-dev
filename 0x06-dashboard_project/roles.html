@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Roles</title>
+
+	<!-- Our project just needs Font Awesome Solid + Brands -->
+	<link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+	<!-- <link href="./assets/fontawesome/css/regular.css" rel="stylesheet" /> -->
+	<link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
+	<link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="./assets/css/dashboard.css">
+</head>
+
+<body>
+	<section class="dashboard_section" id="dashboard-section">
+		<aside>
+			<div class="brand">
+				<img src="./assets/images/logo.png" alt="Brand">
+			</div>
+			<div class="nav_item">
+				<ul class="nav_links">
+					<li>
+						<span>
+							<i class="fa-solid fa-house-user"></i>
+							<a href="#">Dashboard</a>
+						</span>
+					</li>
+					<li class="active">
+						<i class="fa-solid fa-briefcase"></i>
+						<a href="./roles.html">Roles</a>
+					</li>
+					<li>
+						<span id="drop">
+							<i class="fa-solid fa-users"></i>
+							<span>Employees</span>
+							<i class="fa-regular fa-arrow-down" id="arrow"></i>
+						</span>
+						<div class="dropdown" id="dropdown">
+							<ul>
+								<li><a href="./index.html">All Employees</a></li>
+								<li><a href="#">Recent Hires</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<i class="fa-solid fa-scroll"></i>
+						<a href="#">Payroll</a>
+					</li>
+					<li>
+						<i class="fa-solid fa-chart-pie"></i>
+						<a href="#">Reports</a>
+					</li>
+					<li>
+						<i class="fa-solid fa-gear"></i>
+						<a href="#">Settings</a>
+					</li>
+				</ul>
+				<div class="logout">
+					<i class="fa-regular fa-arrow-right-from-bracket"></i>
+					<span>Logout</span>
+				</div>
+			</div>
+		</aside>
+		<main>
+			<div class="top_section">
+				<div class="search">
+					<label for="">
+						<i class="fa-regular fa-magnifying-glass"></i>
+						<input type="text" class="" value="" placeholder="Search anything here">
+					</label>
+				</div>
+				<div class="profile_info">
+					<i class="fa-solid fa-gear"></i>
+					<i class="fa-regular fa-bell"></i>
+					<div class="profile">
+						<img src="./assets/images/avatar.png" alt="Display Profile">
+					</div>
+				</div>
+			</div>
+			<div class="bottom_section">
+				<div class="title_row">
+					<div class="title_col">
+						<h1 class="title">Roles</h1>
+						<i class="fa-regular fa-circle-question"></i>
+						<span class="count">123</span>
+					</div>
+
+					<div class="btn_col">
+						<button class="btn-md btn-alt" id="btn-assign">
+							<i class="fa-regular fa-circle-plus"></i>
+							Assign
+						</button>
+						<button class="btn-lg">
+							<i class="fa-regular fa-circle-plus"></i>
+							New Role
+						</button>
+					</div>
+				</div>
+				<div class="page_section">
+					<ul>
+						<li class="selected">All roles</li>
+						<li>Permissions</li>
+					</ul>
+				</div>
+				<div class="filter_row">
+					<div class="search_col">
+						<i class="fa-regular fa-magnifying-glass"></i>
+						<input type="text" class="" value=""
+							placeholder="Search Roles by Title, Teams or any related keywords">
+						<button type="button" class="btn-md btn-alt">
+							<i class="fa-regular fa-filter"></i>
+							Filter
+						</button>
+					</div>
+
+					<div class="btn_view">
+						<button type="button" class="btn-xsm">
+							<i class="fa-regular fa-list"></i>
+						</button>
+						<button type="button" class="btn-xsm btn-alt">
+							<i class="fa-regular fa-border-all"></i>
+						</button>
+					</div>
+				</div>
+				<div class="page_section">
+					<ul>
+						<li class="selected">All</li>
+						<li>Product</li>
+						<li>Engineering</li>
+						<li>Marketing</li>
+						<li>Recruitment</li>
+						<li>Sales</li>
+						<li>Customer service</li>
+					</ul>
+				</div>
+
+				<!-- CARDs SECTION  -->
+				<div class="cards_section">
+					<div class="card">
+						<div class="head">
+							<h3>Solution Sales Specialist</h3>
+							<div class="profile_dp">
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<p>12</p>
+								</div>
+								<button type="button" class="btn-circle">
+									<i class="fa-regular fa-circle-plus"></i>
+								</button>
+							</div>
+						</div>
+						<p>
+							Responsible for driving revenue growth by identifying and pursuing new
+							business opportunities, as well as maintaining relationships with
+							existing clients. working closely with customers to understand their
+							needs and provide solutions that meet or exceed their expectations,
+							while also achieving the company's sales goals.
+						</p>
+						<div class="roles">
+							<span class="role">Marketing</span>
+							<span class="role">Product</span>
+							<span class="role">Engineering</span>
+							<span class="role">Design</span>
+						</div>
+						<div class="author">
+							<div class="avatar">
+								<img src="./assets/images/avatar.png" alt="">
+							</div>
+							<div class="profile_info">
+								<h4>James Campion</h4>
+								<p>Manager</p>
+							</div>
+							<i class="fa-regular fa-arrow-right"></i>
+						</div>
+					</div>
+					<div class="card">
+						<div class="head">
+							<h3>Solution Sales Specialist</h3>
+							<div class="profile_dp">
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<p>12</p>
+								</div>
+								<button type="button" class="btn-circle">
+									<i class="fa-regular fa-circle-plus"></i>
+								</button>
+							</div>
+						</div>
+						<p>
+							Responsible for driving revenue growth by identifying and pursuing new
+							business opportunities, as well as maintaining relationships with
+							existing clients. working closely with customers to understand their
+							needs and provide solutions that meet or exceed their expectations,
+							while also achieving the company's sales goals.
+						</p>
+						<div class="roles">
+							<span class="role">Marketing</span>
+							<span class="role">Product</span>
+							<span class="role">Engineering</span>
+							<span class="role">Design</span>
+						</div>
+						<div class="author">
+							<div class="avatar">
+								<img src="./assets/images/dp.png" alt="">
+							</div>
+							<div class="profile_info">
+								<h4>James Campion</h4>
+								<p>Manager</p>
+							</div>
+							<i class="fa-regular fa-arrow-right"></i>
+						</div>
+					</div>
+					<div class="card">
+						<div class="head">
+							<h3>Solution Sales Specialist</h3>
+							<div class="profile_dp">
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<p>12</p>
+								</div>
+								<button type="button" class="btn-circle">
+									<i class="fa-regular fa-circle-plus"></i>
+								</button>
+							</div>
+						</div>
+						<p>
+							Responsible for driving revenue growth by identifying and pursuing new
+							business opportunities, as well as maintaining relationships with
+							existing clients. working closely with customers to understand their
+							needs and provide solutions that meet or exceed their expectations,
+							while also achieving the company's sales goals.
+						</p>
+						<div class="roles">
+							<span class="role">Marketing</span>
+							<span class="role">Product</span>
+							<span class="role">Engineering</span>
+							<span class="role">Design</span>
+						</div>
+						<div class="author">
+							<div class="avatar">
+								<img src="./assets/images/avatar.png" alt="">
+							</div>
+							<div class="profile_info">
+								<h4>James Campion</h4>
+								<p>Manager</p>
+							</div>
+							<i class="fa-regular fa-arrow-right"></i>
+						</div>
+					</div>
+					<div class="card">
+						<div class="head">
+							<h3>Solution Sales Specialist</h3>
+							<div class="profile_dp">
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<p>12</p>
+								</div>
+								<button type="button" class="btn-circle">
+									<i class="fa-regular fa-circle-plus"></i>
+								</button>
+							</div>
+						</div>
+						<p>
+							Responsible for driving revenue growth by identifying and pursuing new
+							business opportunities, as well as maintaining relationships with
+							existing clients. working closely with customers to understand their
+							needs and provide solutions that meet or exceed their expectations,
+							while also achieving the company's sales goals.
+						</p>
+						<div class="roles">
+							<span class="role">Marketing</span>
+							<span class="role">Product</span>
+							<span class="role">Engineering</span>
+							<span class="role">Design</span>
+						</div>
+						<div class="author">
+							<div class="avatar">
+								<img src="./assets/images/avatar.png" alt="">
+							</div>
+							<div class="profile_info">
+								<h4>James Campion</h4>
+								<p>Manager</p>
+							</div>
+							<i class="fa-regular fa-arrow-right"></i>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</main>
+	</section>
+
+
+	<!-- Modal Section  -->
+
+	<div class="modal" id="modal">
+		<div class="modal_content">
+			<i class="fa-solid fa-circle-xmark" id="close"></i>
+			<div class="assign" id="assign">
+				<div class="top_icon">
+					<i class="fa-regular fa-briefcase"></i>
+				</div>
+				<div class="header">
+					<h3>Assign this role</h3>
+					<p>Select one or multiple employees to assign to this role <span>“Senior Design Lead “</span></p>
+				</div>
+				<div class="search">
+					<i class="fa-regular fa-magnifying-glass"></i>
+					<input type="text" class="" value="" placeholder="Search for an individual or team">
+					<i class="fa-regular fa-circle-question"></i>
+				</div>
+				<form action="">
+					<div class="user-list">
+						<label class="custom">
+							<div class="user">
+								<div class="user_profile">
+									<div class="avatar">
+										<img src="./assets/images/avatar.png" alt="">
+									</div>
+									<div class="profile_info">
+										<h4>Jennifer Lopez</h4>
+										<p>Product Designer, Integrations</p>
+									</div>
+								</div>
+								<input type="radio" name="assign-role" checked="checked">
+								<span class="checkmark"></span>
+							</div>
+						</label>
+						<label class="custom">
+							<div class="user">
+								<div class="user_profile">
+									<div class="avatar">
+										<img src="./assets/images/avatar.png" alt="">
+									</div>
+									<div class="profile_info">
+										<h4>Tassy Omah</h4>
+										<p>Developer Relations, Payments</p>
+									</div>
+								</div>
+								<input type="radio" name="assign-role">
+								<span class="checkmark"></span>
+							</div>
+						</label>
+						<label class="custom">
+							<div class="user">
+								<div class="user_profile">
+									<div class="avatar">
+										<img src="./assets/images/avatar.png" alt="">
+									</div>
+									<div class="profile_info">
+										<h4>Emeto winner </h4>
+										<p>Backend Developer, Payments</p>
+									</div>
+								</div>
+								<input type="radio" name="assign-role">
+								<span class="checkmark"></span>
+							</div>
+						</label>
+						<label class="custom">
+							<div class="user">
+								<div class="user_profile">
+									<div class="avatar">
+										<img src="./assets/images/avatar.png" alt="">
+									</div>
+									<div class="profile_info">
+										<h4>Jane mena </h4>
+										<p>Product Manger, Dashboard</p>
+									</div>
+								</div>
+								<input type="radio" name="assign-role">
+								<span class="checkmark"></span>
+							</div>
+						</label>
+						<label class="custom">
+							<div class="user">
+								<div class="user_profile">
+									<div class="avatar">
+										<img src="./assets/images/avatar.png" alt="">
+									</div>
+									<div class="profile_info">
+										<h4>Kate Magnamay</h4>
+										<p>Product Manger, Dashboard</p>
+									</div>
+								</div>
+								<input type="radio" name="assign-role">
+								<span class="checkmark"></span>
+							</div>
+						</label>
+						
+								
+						
+								
+					
+								
+					
+								
+							
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -4,13 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dashboard</title>
+	<title>Employees</title>
 
-<!-- our project just needs Font Awesome Solid + Brands -->
-<link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
-<link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
-<link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
-<link href="./assets/fontawesome/css" rel="stylesheet" />
+	<!-- our project just needs Font Awesome Solid + Brands -->
+	<link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+	<!-- <link href="./assets/fontawesome/css/regular.css" rel="stylesheet" /> -->
+	<link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
+	<link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
 
 
 
@@ -37,12 +37,12 @@
 					<li>
 						<span class="active">
 							<i class="fa-solid fa-users"></i>
-							<a href="#">Employees</a>
+							<a href="./index.html">Employees</a>
 							<i class="fa-regular fa-arrow-down"></i>
 						</span>
 						<div class="dropdown">
 							<ul>
-								<li><a href="#">All Employees</a></li>
+								<li><a href="#" class="act">All Employees</a></li>
 								<li><a href="#">Recent Hires</a></li>
 							</ul>
 						</div>
@@ -71,205 +71,284 @@
 				<div class="search">
 					<label for="">
 						<i class="fa-regular fa-magnifying-glass"></i>
-						<input type="text" class="" value="Search anything here">
+						<input type="text" class="" value="" placeholder="Search anything here">
 					</label>
 				</div>
 				<div class="profile_info">
 					<i class="fa-solid fa-gear"></i>
 					<i class="fa-regular fa-bell"></i>
-					<span class="profile">
-						<img src="./images/brand/dp.png" alt="Display Profile">
-					</span>
-				</div>
-			</div>
-			<div class="title_section">
-				<div>
-					<h1 class="title">Employees</h1>
-					<i class="fa-regular fa-circle-question"></i>
-					<span>100</span>
-				</div>
-				<div>
-					<label for="">
-						<i class="fa-regular fa-download"></i>
-						<input type="text" value="Export">
-					</label>
-					<button>
-						<i class="fa-regular fa-plus"></i>
-						New Employee
-					</button>
-				</div>
-			</div>
-			<div class="page_section">
-				<ul>
-					<li>All Employees</li>
-					<li>Teams</li>
-					<li>Roles</li>
-				</ul>
-			</div>
-			<div class="filter_section">
-				<i class="fa-regular fa-magnifying-glass"></i>
-				<label for=""></label>
-				<input type="text" class="" value="Search Employee by name, role, ID or any related keywords">
-				<label for="">
-					<i class="fa-regular fa-filter"></i>
-					<select name="" id="">
-						<option value="">Filter</option>
-					</select>
-				</label>
-				<span class="view">
-					<button type="button">
-						<i class="fa-regular fa-list"></i>
-					</button>
-					<button type="button">
-						<i class="fa-regular fa-border-all"></i>
-					</button>
-				</span>
-			</div>
-			<div class="table_section">
-				<table>
-					<thead>
-						<tr>
-							<th scope="col"><label for=""><input type="checkbox" name="" class="check_item"
-										id=""></label>
-							</th>
-							<th scope="col">#</th>
-							<th scope="col">Name</th>
-							<th scope="col">Employee ID</th>
-							<th scope="col">Role</th>
-							<th scope="col">Status</th>
-							<th scope="col">Teams</th>
-						</tr>
-					</thead>
-					<tbody>
-						<form action="#" method="POST">
-							<tr>
-								<td>
-									<label for="check-1">
-										<input type="checkbox" name="" class="check_item" id="check-1">
-									</label>
-								</td>
-								<td>
-									<div class="user">
-										<div class="display_pic">
-											<img src="./images/dp.png" alt="dp" class="user_dp">
-										</div>
-										<div class="user_info">
-											<h4 class="user_name">Tanner Finsha</h4>
-											<p class="email">@Tannerfisher@gmail.com</p>
-										</div>
-									</div>
-	
-								</td>
-								<td>#23454GH6J7YT6</td>
-								<td>
-									<h4 class="role">Product Designer</h4>
-									<p class="type">Full time</p>
-								</td>
-								<td>
-									<span>
-										<i>icon</i>
-										active
-									</span>
-								</td>
-								<td>
-									<span class="team_1">Marketing</span>
-									<span class="team_2">Design</span>
-									<span class="others">+1</span>
-								</td>
-								<td>
-									<i>vertical_elipsis</i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label for="check-2">
-										<input type="checkbox" name="" class="check_item" id="check-2">
-									</label>
-								</td>
-								<td>
-									<div class="user">
-										<div class="display_pic">
-											<img src="./images/dp.png" alt="dp" class="user_dp">
-										</div>
-										<div class="user_info">
-											<h4 class="user_name">Tanner Finsha</h4>
-											<p class="email">@Tannerfisher@gmail.com</p>
-										</div>
-									</div>
-	
-								</td>
-								<td>#23454GH6J7YT6</td>
-								<td>
-									<h4 class="role">Product Designer</h4>
-									<p class="type">Full time</p>
-								</td>
-								<td>
-									<span>
-										<i>icon</i>
-										active
-									</span>
-								</td>
-								<td>
-									<span class="team_1">Marketing</span>
-									<span class="team_2">Design</span>
-									<span class="others">+1</span>
-								</td>
-								<td>
-									<i>vertical_elipsis</i>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label for="check-3">
-										<input type="checkbox" name="" class="check_item" id="check-3">
-									</label>
-								</td>
-								<td>
-									<div class="user">
-										<div class="display_pic">
-											<img src="./images/dp.png" alt="dp" class="user_dp">
-										</div>
-										<div class="user_info">
-											<h4 class="user_name">Tanner Finsha</h4>
-											<p class="email">@Tannerfisher@gmail.com</p>
-										</div>
-									</div>
-	
-								</td>
-								<td>#23454GH6J7YT6</td>
-								<td>
-									<h4 class="role">Product Designer</h4>
-									<p class="type">Full time</p>
-								</td>
-								<td>
-									<span>
-										<i>icon</i>
-										active
-									</span>
-								</td>
-								<td>
-									<span class="team_1">Marketing</span>
-									<span class="team_2">Design</span>
-									<span class="others">+1</span>
-								</td>
-								<td>
-									<i>vertical_elipsis</i>
-								</td>
-							</tr>
-						</form>
-					</tbody>
-				</table>
-				<div class="pagination_section">
-					<button><i class="fa-regular fa-arrow-left"></i> Previous</button>
-					<div class="page_no">
-						<span class="page_no">1</span>
-						<span class="page_no">2</span>
-						<span class="page_no">3</span>
-						<span class="page_no">4</span>
-						<span class="page_no">5</span>
+					<div class="profile">
+						<img src="./assets/images/avatar.png" alt="Display Profile">
 					</div>
-					<button>Next <i class="fa-regular fa-arrow-right"></i></button>
 				</div>
+			</div>
+			<div class="bottom_section">
+				<div class="title_row">
+					<div class="title_col">
+						<h1 class="title">Employees</h1>
+						<i class="fa-regular fa-circle-question"></i>
+						<span class="count">100</span>
+					</div>
+					<div class="btn_col">
+						<button class="btn-md">
+							<i class="fa-regular fa-download"></i>
+							Export
+						</button>
+						<button class="btn-xlg">
+							<i class="fa-regular fa-circle-plus"></i>
+							New Employee
+						</button>
+					</div>
+				</div>
+				<div class="page_section">
+					<ul>
+						<li class="selected">All Employees</li>
+						<li>Teams</li>
+						<li>Roles</li>
+					</ul>
+				</div>
+				<div class="filter_row">
+					<div class="search_col">
+						<i class="fa-regular fa-magnifying-glass"></i>
+						<input type="text" class="" value=""
+							placeholder="Search Employee by name, role, ID or any related keywords">
+						<button type="button" class="btn-md btn-alt">
+							<i class="fa-regular fa-filter"></i>
+							Filter
+						</button>
+					</div>
+
+					<div class="btn_view">
+						<button type="button" class="btn-xsm">
+							<i class="fa-regular fa-list"></i>
+						</button>
+						<button type="button" class="btn-xsm btn-alt">
+							<i class="fa-regular fa-border-all"></i>
+						</button>
+					</div>
+				</div>
+				<div class="table_section">
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">
+									<label for="">
+										<input type="checkbox" name="" class="check_item" id="">
+									</label>
+								</th>
+								<th scope="col">Name</th>
+								<th scope="col">Employee ID</th>
+								<th scope="col">Role <i class="fa-regular fa-circle-question"></i></th>
+								<th scope="col">Status</th>
+								<th scope="col">Teams</th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<form action="#" method="POST">
+								<tr>
+									<td>
+										<label for="check-1">
+											<input type="checkbox" name="" class="check_item" id="check-1">
+										</label>
+									</td>
+									<td>
+										<div class="display_pic">
+											<img src="./assets/images/dp.png" alt="dp" class="user_dp">
+										</div>
+										<div class="user_info">
+											<h5 class="user_name">Tanner Finsha</h5>
+											<p class="email">@Tannerfisher@gmail.com</p>
+										</div>
+									</td>
+									<td><span>#23454GH6J7YT6</span></td>
+									<td>
+										<h5 class="role">Product Designer</h5>
+										<p class="type">Full time</p>
+									</td>
+									<td>
+										<span class="status">
+											<i class="fa-solid fa-circle"></i>
+											active
+										</span>
+									</td>
+									<td>
+										<div class="roles">
+											<span class="team_1">Marketing</span>
+											<span class="team_2">Design</span>
+											<span class="others">+1</span>
+										</div>
+									</td>
+									<td>
+										<i class="fa-regular fa-ellipsis-vertical"></i>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="check-2">
+											<input type="checkbox" name="" class="check_item" id="check-2">
+										</label>
+									</td>
+									<td>
+										<div class="display_pic">
+											<img src="./assets/images/dp.png" alt="dp" class="user_dp">
+										</div>
+										<div class="user_info">
+											<h5 class="user_name">Tanner Finsha</h5>
+											<p class="email">@Tannerfisher@gmail.com</p>
+										</div>
+									</td>
+									<td><span>#23454GH6J7YT6</span></td>
+									<td>
+										<h5 class="role">Product Designer</h5>
+										<p class="type">Full time</p>
+									</td>
+									<td>
+										<span class="status">
+											<i class="fa-solid fa-circle"></i>
+											active
+										</span>
+									</td>
+									<td>
+										<div class="roles">
+											<span class="team_1">Marketing</span>
+											<span class="team_2">Design</span>
+											<span class="others">+1</span>
+										</div>
+									</td>
+									<td>
+										<i class="fa-regular fa-ellipsis-vertical"></i>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="check-3">
+											<input type="checkbox" name="" class="check_item" id="check-3">
+										</label>
+									</td>
+									<td>
+										<div class="display_pic">
+											<img src="./assets/images/dp.png" alt="dp" class="user_dp">
+										</div>
+										<div class="user_info">
+											<h5 class="user_name">Tanner Finsha</h5>
+											<p class="email">@Tannerfisher@gmail.com</p>
+										</div>
+									</td>
+									<td><span>#23454GH6J7YT6</span></td>
+									<td>
+										<h5 class="role">Product Designer</h5>
+										<p class="type">Full time</p>
+									</td>
+									<td>
+										<span class="status">
+											<i class="fa-solid fa-circle"></i>
+											active
+										</span>
+									</td>
+									<td>
+										<div class="roles">
+											<span class="team_1">Marketing</span>
+											<span class="team_2">Design</span>
+											<span class="others">+1</span>
+										</div>
+									</td>
+									<td>
+										<i class="fa-regular fa-ellipsis-vertical"></i>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="check-4">
+											<input type="checkbox" name="" class="check_item" id="check-4">
+										</label>
+									</td>
+									<td>
+										<div class="display_pic">
+											<img src="./assets/images/dp.png" alt="dp" class="user_dp">
+										</div>
+										<div class="user_info">
+											<h5 class="user_name">Tanner Finsha</h5>
+											<p class="email">@Tannerfisher@gmail.com</p>
+										</div>
+									</td>
+									<td><span>#23454GH6J7YT6</span></td>
+									<td>
+										<h5 class="role">Product Designer</h5>
+										<p class="type">Full time</p>
+									</td>
+									<td>
+										<span class="status">
+											<i class="fa-solid fa-circle"></i>
+											active
+										</span>
+									</td>
+									<td>
+										<div class="roles">
+											<span class="team_1">Marketing</span>
+											<span class="team_2">Design</span>
+											<span class="others">+1</span>
+										</div>
+									</td>
+									<td>
+										<i class="fa-regular fa-ellipsis-vertical"></i>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="check-5">
+											<input type="checkbox" name="" class="check_item" id="check-5">
+										</label>
+									</td>
+									<td>
+										<div class="display_pic">
+											<img src="./assets/images/dp.png" alt="dp" class="user_dp">
+										</div>
+										<div class="user_info">
+											<h5 class="user_name">Tanner Finsha</h5>
+											<p class="email">@Tannerfisher@gmail.com</p>
+										</div>
+									</td>
+									<td><span>#23454GH6J7YT6</span></td>
+									<td>
+										<h5 class="role">Product Designer</h5>
+										<p class="type">Full time</p>
+									</td>
+									<td>
+										<span class="status">
+											<i class="fa-solid fa-circle"></i>
+											active
+										</span>
+									</td>
+									<td>
+										<div class="roles">
+											<span class="team_1">Marketing</span>
+											<span class="team_2">Design</span>
+											<span class="others">+1</span>
+										</div>
+									</td>
+									<td>
+										<i class="fa-regular fa-ellipsis-vertical"></i>
+									</td>
+								</tr>
+							</form>
+						</tbody>
+					</table>
+				</div>
+					<div class="pagination_section">
+						<button type="button" class="btn-sm"><i class="fa-regular fa-arrow-left"></i> Previous</button>
+						<div class="page_no">
+							<span class="page_no current">1</span>
+							<span class="page_no">2</span>
+							<span class="page_no">3</span>
+							<span class="page_no">...</span>
+							<span class="page_no">8</span>
+							<span class="page_no">9</span>
+							<span class="page_no">10</span>
+						</div>
+						<button type="button" class="btn-sm">Next <i class="fa-regular fa-arrow-right"></i></button>
+					</div>
+				
 			</div>
 		</main>
 	</section>
