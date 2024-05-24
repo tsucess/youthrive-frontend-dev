@@ -29,3 +29,21 @@ dataSearch.onkeyup = () => {
 		}
 	}
 }
+
+// Modal search feature 
+let userSearch = document.getElementById('search');
+
+userSearch.onkeyup = () => {
+	//filter value
+	let filterValue = userSearch.value;
+	let item = document.querySelectorAll('#search-user .custom');
+	for(let i = 0; i < item.length; i++){
+		let data = item[i].querySelectorAll('.custom > div')[0];
+		
+		if(data.innerHTML.indexOf(filterValue) > -1){
+			item[i].style.display = '';
+		} else {
+			item[i].style.display = 'none';
+		}
+	}
+}
