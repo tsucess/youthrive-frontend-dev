@@ -5,9 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Employees</title>
-
-	<!-- our project just needs Font Awesome Solid + Brands -->
-	<link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+		<!-- our project just needs Font Awesome Solid + Brands -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
 	<!-- <link href="./assets/fontawesome/css/regular.css" rel="stylesheet" /> -->
 	<link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
 	<link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
@@ -122,10 +122,15 @@
 						<i class="fa-regular fa-magnifying-glass"></i>
 						<input type="text" id="term-search" class="" value=""
 							placeholder="Search Employee by name, role, ID or any related keywords">
-						<button type="button" class="btn-md btn-alt">
-							<i class="fa-regular fa-filter"></i>
-							Filter
-						</button>
+							<select name="" id="" class="btn-md btn-alt btn-filter">
+								<option value="">
+									&#xf0b0; 
+									Filter
+								</option>
+								<option value="name">Name</option>
+								<option value="role">Role</option>
+								<option value="id">ID</option>
+							</select>
 					</div>
 
 					<div class="btn_view">
@@ -515,18 +520,15 @@
 						</label>
 					</div>
 				</form>
+
+
+
 				<div class="pagination_section">
-					<button type="button" class="btn-sm"><i class="fa-regular fa-arrow-left"></i> Previous</button>
-					<div class="page_no">
-						<span class="page_no current">1</span>
-						<span class="page_no">2</span>
-						<span class="page_no">3</span>
-						<span class="page_no">...</span>
-						<span class="page_no">8</span>
-						<span class="page_no">9</span>
-						<span class="page_no">10</span>
-					</div>
-					<button type="button" class="btn-sm">Next <i class="fa-regular fa-arrow-right"></i></button>
+					<button type="button" id="prev" class="btn-sm"><i class="fa-regular fa-arrow-left"></i> Previous</button>
+					<ul class="page-nums">
+						<li class="current">1</li>
+					</ul>
+					<button type="button" id="next" class="btn-sm">Next <i class="fa-regular fa-arrow-right"></i></button>
 				</div>
 
 			</div>

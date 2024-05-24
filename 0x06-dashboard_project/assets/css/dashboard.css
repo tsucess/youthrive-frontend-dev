@@ -71,7 +71,7 @@ body {
   color: #ffffff;
   cursor: pointer;
 }
-.btn-xlg i{
+.btn-xlg i {
   color: #ffffff;
 }
 
@@ -96,6 +96,23 @@ body {
   border: 1px solid #e6e7ec;
   color: #0e2354;
   cursor: pointer;
+}
+
+.btn-filter {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  text-align: right;
+  font-family: fontAwesome, "Inter", sans-serif;
+  font-size: 1.12rem;
+}
+.btn-filter:focus {
+  outline: none;
+}
+
+.btn-filter > option {
+  font-family: fontAwesome, "Inter", sans-serif;
+  text-align: left;
 }
 
 .btn-sm {
@@ -125,13 +142,45 @@ body {
   color: #6a1039;
 }
 
+/* table {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+} */
+
+/* table thead{
+  width: 100%;
+}
+
+table thead tr{
+  display: flex;
+  flex-flow: row;
+  gap: 6rem;
+ text-align: left;
+}
+
+table thead tr th{
+  width: 16.6%;
+  text-align: left;
+  
+}
+ table tr{ 
+  width: 100%;
+  text-align: left;
+ } */
+
+/* table tr td {
+  width: 16.6%;
+  background-color: #333333;
+
+} */
+
 table input[type="checkbox"] {
   cursor: pointer;
   height: 1.2rem;
   width: 1.2rem;
   background: #0e2354;
 }
-
 
 .dashboard_section {
   width: 100%;
@@ -374,22 +423,30 @@ main .table_section {
   border-radius: 0.5rem 0.5rem 0 0;
   border: 1px solid #eff1f4;
   margin-top: 1rem;
+  overflow: hidden;
+  overflow-x: scroll;
   scroll-behavior: smooth;
 }
 
 main .table_section table {
-  width: 100%;
+  width: 80rem;
   border-collapse: collapse;
   font-family: "Inter", sans-serif;
 }
 
 main .table_section table thead {
   background-color: #eaecf0;
+  display: block;
+}
+
+main .table_section table thead tr {
+  display: flex;
+  /* gap: 3rem; */
+  justify-content: flex-start;
 }
 
 main .table_section table thead tr th {
-  border-right: 0px;
-  border-left: 0px;
+  width: 12rem; 
   padding: 0.75rem 1.5rem;
   text-align: left;
   font-family: "Inter", sans-serif;
@@ -400,17 +457,31 @@ main .table_section table thead tr {
   opacity: 0px;
   color: #42526d;
   font-size: 0.75rem;
+  text-align: left;
+}
+main .table_section table tbody tr td {
+  width: 12rem; 
 }
 
 main .table_section table thead tr th:first-child,
 main .table_section table tbody tr td:first-child {
+  width: 5rem !important; 
+}
+main .table_section table thead tr th:last-child,
+main .table_section table tbody tr td:last-child {
   text-align: center;
+  width: 8rem;
+}
+
+main .table_section table thead tr th:nth-child(2) {
+  width: 17rem;
 }
 
 main .table_section table tbody tr td:nth-child(2) {
   display: flex;
   flex-flow: row;
   gap: 0.5rem;
+  width: 17rem;
 }
 
 main .table_section table tbody tr td {
@@ -519,7 +590,7 @@ main .cards_section .card .head {
   width: 100%;
 }
 
-#employee_page .cards_section label{
+#employee_page .cards_section label {
   width: 48%;
 }
 
@@ -634,10 +705,6 @@ main .cards_section .card .head {
   align-items: center;
 }
 
-
-
-
-
 main .pagination_section {
   display: flex;
   flex-flow: row;
@@ -650,13 +717,18 @@ main .pagination_section {
   border: 1px solid #eff1f4;
 }
 
-main .pagination_section span.page_no {
+main .pagination_section ul.page-nums {
   /* width: 2.5rem; */
+  display: flex;
+  gap: 0.5 rem;
+}
+
+main .pagination_section ul li {
   text-align: center;
   border-radius: 0.5rem;
   padding: 0.725rem 1rem;
 }
-main .pagination_section span.current {
+main .pagination_section li.current {
   background: #eff1f4;
 }
 
@@ -911,9 +983,6 @@ main .cards_section .card .author i {
   height: 1.2rem;
   width: 1.2rem;
 }
-
-
-
 
 /* Custome Radio Button  */
 /* The container */

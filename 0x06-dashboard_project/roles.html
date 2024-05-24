@@ -7,6 +7,7 @@
 	<title>Roles</title>
 
 	<!-- Our project just needs Font Awesome Solid + Brands -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
 	<!-- <link href="./assets/fontawesome/css/regular.css" rel="stylesheet" /> -->
 	<link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
@@ -119,10 +120,15 @@
 						<i class="fa-regular fa-magnifying-glass"></i>
 						<input type="text" id="data-search" class="" value=""
 							placeholder="Search Roles by Title, Teams or any related keywords">
-						<button type="button" class="btn-md btn-alt">
-							<i class="fa-regular fa-filter"></i>
-							Filter
-						</button>
+							<select name="" id="" class="btn-md btn-alt btn-filter">
+								<option value="">
+									&#xf0b0; 
+									Filter
+								</option>
+								<option value="name">Name</option>
+								<option value="role">Role</option>
+								<option value="id">ID</option>
+							</select>
 					</div>
 
 					<div class="btn_view">
