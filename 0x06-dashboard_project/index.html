@@ -27,37 +27,47 @@
 			<div class="nav_item">
 				<ul class="nav_links">
 					<li>
-						<i class="fa-solid fa-house-user"></i>
-						<a href="#">Dashboard</a>
-					</li>
-					<li>
-						<i class="fa-solid fa-briefcase"></i>
-						<a href="./roles.html">Roles</a>
-					</li>
-					<li>
-						<span class="active">
-							<i class="fa-solid fa-users"></i>
-							<a href="./index.html">Employees</a>
-							<i class="fa-regular fa-arrow-down"></i>
+						<span>
+							<i class="fa-solid fa-house-user"></i>
+							<a href="#">Dashboard</a>
 						</span>
-						<div class="dropdown">
+					</li>
+					<li> 
+						<span>
+							<i class="fa-solid fa-briefcase"></i>
+							<a href="./roles.html">Roles</a>
+						</span>
+					</li>
+					<li>
+						<span class="active" id="drop">
+							<i class="fa-solid fa-users"></i>
+							<span>Employees</span>
+							<i class="fa-regular fa-arrow-down" id="arrow"></i>
+						</span>
+						<div class="dropdown" id="dropdown">
 							<ul>
-								<li><a href="#" class="act">All Employees</a></li>
+								<li><a href="./index.html">All Employees</a></li>
 								<li><a href="#">Recent Hires</a></li>
 							</ul>
 						</div>
 					</li>
 					<li>
-						<i class="fa-solid fa-scroll"></i>
-						<a href="#">Payroll</a>
+						<span>
+							<i class="fa-solid fa-scroll"></i>
+							<a href="#">Payroll</a>
+						</span>
 					</li>
 					<li>
-						<i class="fa-solid fa-chart-pie"></i>
-						<a href="#">Reports</a>
+						<span>
+							<i class="fa-solid fa-chart-pie"></i>
+							<a href="#">Reports</a>		
+						</span>
 					</li>
 					<li>
-						<i class="fa-solid fa-gear"></i>
-						<a href="#">Settings</a>
+						<span>
+							<i class="fa-solid fa-gear"></i>
+							<a href="#">Settings</a>
+						</span>
 					</li>
 				</ul>
 				<div class="logout">
@@ -66,7 +76,7 @@
 				</div>
 			</div>
 		</aside>
-		<main>
+		<main id="employee_page">
 			<div class="top_section">
 				<div class="search">
 					<label for="">
@@ -110,7 +120,7 @@
 				<div class="filter_row">
 					<div class="search_col">
 						<i class="fa-regular fa-magnifying-glass"></i>
-						<input type="text" class="" value=""
+						<input type="text" id="term-search" class="" value=""
 							placeholder="Search Employee by name, role, ID or any related keywords">
 						<button type="button" class="btn-md btn-alt">
 							<i class="fa-regular fa-filter"></i>
@@ -119,7 +129,7 @@
 					</div>
 
 					<div class="btn_view">
-						<button type="button" class="btn-xsm">
+						<button type="button" class="btn-xsm" status="active">
 							<i class="fa-regular fa-list"></i>
 						</button>
 						<button type="button" class="btn-xsm btn-alt">
@@ -128,7 +138,7 @@
 					</div>
 				</div>
 				<div class="table_section">
-					<table>
+					<table >
 						<thead>
 							<tr>
 								<th scope="col">
@@ -144,9 +154,9 @@
 								<th scope="col"></th>
 							</tr>
 						</thead>
-						<tbody>
+						<tbody id="terms">
 							<form action="#" method="POST">
-								<tr>
+								<tr class="data">
 									<td>
 										<label for="check-1">
 											<input type="checkbox" name="" class="check_item" id="check-1">
@@ -169,7 +179,7 @@
 									<td>
 										<span class="status">
 											<i class="fa-solid fa-circle"></i>
-											active
+											Active
 										</span>
 									</td>
 									<td>
@@ -183,7 +193,7 @@
 										<i class="fa-regular fa-ellipsis-vertical"></i>
 									</td>
 								</tr>
-								<tr>
+								<tr class="data">
 									<td>
 										<label for="check-2">
 											<input type="checkbox" name="" class="check_item" id="check-2">
@@ -194,33 +204,33 @@
 											<img src="./assets/images/dp.png" alt="dp" class="user_dp">
 										</div>
 										<div class="user_info">
-											<h5 class="user_name">Tanner Finsha</h5>
-											<p class="email">@Tannerfisher@gmail.com</p>
+											<h5 class="user_name">Jennifer Lopez</h5>
+											<p class="email">@Jenniferlopez@gmail.com</p>
 										</div>
 									</td>
-									<td><span>#23454GH6J7YT6</span></td>
+									<td><span>#23455GH6J7YT7</span></td>
 									<td>
 										<h5 class="role">Product Designer</h5>
 										<p class="type">Full time</p>
 									</td>
 									<td>
-										<span class="status">
+										<span class="status inactive">
 											<i class="fa-solid fa-circle"></i>
-											active
+											Inactive
 										</span>
 									</td>
 									<td>
 										<div class="roles">
 											<span class="team_1">Marketing</span>
 											<span class="team_2">Design</span>
-											<span class="others">+1</span>
+											<span class="others">+4</span>
 										</div>
 									</td>
 									<td>
 										<i class="fa-regular fa-ellipsis-vertical"></i>
 									</td>
 								</tr>
-								<tr>
+								<tr class="data">
 									<td>
 										<label for="check-3">
 											<input type="checkbox" name="" class="check_item" id="check-3">
@@ -231,33 +241,33 @@
 											<img src="./assets/images/dp.png" alt="dp" class="user_dp">
 										</div>
 										<div class="user_info">
-											<h5 class="user_name">Tanner Finsha</h5>
-											<p class="email">@Tannerfisher@gmail.com</p>
+											<h5 class="user_name">Tassy Omah</h5>
+											<p class="email">@Tassyomah@gmail.com</p>
 										</div>
 									</td>
-									<td><span>#23454GH6J7YT6</span></td>
+									<td><span>#23458GH6J7YT8</span></td>
 									<td>
-										<h5 class="role">Product Designer</h5>
+										<h5 class="role">Developer Relations</h5>
 										<p class="type">Full time</p>
 									</td>
 									<td>
 										<span class="status">
 											<i class="fa-solid fa-circle"></i>
-											active
+											Active
 										</span>
 									</td>
 									<td>
 										<div class="roles">
-											<span class="team_1">Marketing</span>
+											<span class="team_1">Engineering</span>
 											<span class="team_2">Design</span>
-											<span class="others">+1</span>
+											<span class="others">+3</span>
 										</div>
 									</td>
 									<td>
 										<i class="fa-regular fa-ellipsis-vertical"></i>
 									</td>
 								</tr>
-								<tr>
+								<tr class="data">
 									<td>
 										<label for="check-4">
 											<input type="checkbox" name="" class="check_item" id="check-4">
@@ -268,24 +278,24 @@
 											<img src="./assets/images/dp.png" alt="dp" class="user_dp">
 										</div>
 										<div class="user_info">
-											<h5 class="user_name">Tanner Finsha</h5>
-											<p class="email">@Tannerfisher@gmail.com</p>
+											<h5 class="user_name">Jane mena</h5>
+											<p class="email">@Janemena@gmail.com</p>
 										</div>
 									</td>
-									<td><span>#23454GH6J7YT6</span></td>
+									<td><span>#23423GH6J7YT9</span></td>
 									<td>
-										<h5 class="role">Product Designer</h5>
+										<h5 class="role">Product Manager</h5>
 										<p class="type">Full time</p>
 									</td>
 									<td>
-										<span class="status">
+										<span class="status inactive">
 											<i class="fa-solid fa-circle"></i>
-											active
+											Inactive
 										</span>
 									</td>
 									<td>
 										<div class="roles">
-											<span class="team_1">Marketing</span>
+											<span class="team_1">Product</span>
 											<span class="team_2">Design</span>
 											<span class="others">+1</span>
 										</div>
@@ -294,7 +304,7 @@
 										<i class="fa-regular fa-ellipsis-vertical"></i>
 									</td>
 								</tr>
-								<tr>
+								<tr class="data">
 									<td>
 										<label for="check-5">
 											<input type="checkbox" name="" class="check_item" id="check-5">
@@ -305,26 +315,26 @@
 											<img src="./assets/images/dp.png" alt="dp" class="user_dp">
 										</div>
 										<div class="user_info">
-											<h5 class="user_name">Tanner Finsha</h5>
-											<p class="email">@Tannerfisher@gmail.com</p>
+											<h5 class="user_name">Kate Magnamay</h5>
+											<p class="email">@Katemagnamay@gmail.com</p>
 										</div>
 									</td>
 									<td><span>#23454GH6J7YT6</span></td>
 									<td>
-										<h5 class="role">Product Designer</h5>
+										<h5 class="role">Web Developer</h5>
 										<p class="type">Full time</p>
 									</td>
 									<td>
 										<span class="status">
 											<i class="fa-solid fa-circle"></i>
-											active
+											Active
 										</span>
 									</td>
 									<td>
 										<div class="roles">
 											<span class="team_1">Marketing</span>
-											<span class="team_2">Design</span>
-											<span class="others">+1</span>
+											<!-- <span class="team_2">Design</span>
+											<span class="others">+6</span> -->
 										</div>
 									</td>
 									<td>
@@ -335,6 +345,198 @@
 						</tbody>
 					</table>
 				</div>
+
+				<!-- CARDs SECTION  -->
+				<div class="cards_section" id="role-data">
+					<div class="card data">
+						<div class="head">
+							<h3>Social Media Manager</h3>
+							<div class="profile_dp">
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<p>12</p>
+								</div>
+								<button type="button" class="btn-circle">
+									<i class="fa-regular fa-circle-plus"></i>
+								</button>
+							</div>
+						</div>
+						<p>
+							Responsible for driving revenue growth by identifying and pursuing new
+							business opportunities, as well as maintaining relationships with
+							existing clients. working closely with customers to understand their
+							needs and provide solutions that meet or exceed their expectations,
+							while also achieving the company's sales goals.
+						</p>
+						<div class="roles">
+							<span class="role">Marketing</span>
+							<span class="role">Engineering</span>
+							<span class="role">Design</span>
+						</div>
+						<div class="author">
+							<div class="avatar">
+								<img src="./assets/images/avatar.png" alt="">
+							</div>
+							<div class="profile_info">
+								<h4>James Campion</h4>
+								<p>Manager</p>
+							</div>
+							<i class="fa-regular fa-arrow-right"></i>
+						</div>
+					</div>
+					<div class="card data">
+						<div class="head">
+							<h3>Solution Sales Specialist</h3>
+							<div class="profile_dp">
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<p>12</p>
+								</div>
+								<button type="button" class="btn-circle">
+									<i class="fa-regular fa-circle-plus"></i>
+								</button>
+							</div>
+						</div>
+						<p>
+							Responsible for driving revenue growth by identifying and pursuing new
+							business opportunities, as well as maintaining relationships with
+							existing clients. working closely with customers to understand their
+							needs and provide solutions that meet or exceed their expectations,
+							while also achieving the company's sales goals.
+						</p>
+						<div class="roles">
+							<span class="role">Marketing</span>
+							<span class="role">Design</span>
+						</div>
+						<div class="author">
+							<div class="avatar">
+								<img src="./assets/images/dp.png" alt="">
+							</div>
+							<div class="profile_info">
+								<h4>James Cole</h4>
+								<p>Manager</p>
+							</div>
+							<i class="fa-regular fa-arrow-right"></i>
+						</div>
+					</div>
+					<div class="card data">
+						<div class="head">
+							<h3>Solution Sales Specialist</h3>
+							<div class="profile_dp">
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<p>12</p>
+								</div>
+								<button type="button" class="btn-circle">
+									<i class="fa-regular fa-circle-plus"></i>
+								</button>
+							</div>
+						</div>
+						<p>
+							Responsible for driving revenue growth by identifying and pursuing new
+							business opportunities, as well as maintaining relationships with
+							existing clients. working closely with customers to understand their
+							needs and provide solutions that meet or exceed their expectations,
+							while also achieving the company's sales goals.
+						</p>
+						<div class="roles">
+							<span class="role">Marketing</span>
+							<span class="role">Product</span>
+							<span class="role">Engineering</span>
+						</div>
+						<div class="author">
+							<div class="avatar">
+								<img src="./assets/images/avatar.png" alt="">
+							</div>
+							<div class="profile_info">
+								<h4>Kate Magnamay</h4>
+								<p>IT Support Staff</p>
+							</div>
+							<i class="fa-regular fa-arrow-right"></i>
+						</div>
+					</div>
+					<div class="card data">
+						<div class="head">
+							<h3>Virtual Assistant</h3>
+							<div class="profile_dp">
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/dp.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<img src="./assets/images/avatar.png" alt="dp">
+								</div>
+								<div class="avatars">
+									<p>12</p>
+								</div>
+								<button type="button" class="btn-circle">
+									<i class="fa-regular fa-circle-plus"></i>
+								</button>
+							</div>
+						</div>
+						<p>
+							Responsible for driving revenue growth by identifying and pursuing new
+							business opportunities, as well as maintaining relationships with
+							existing clients. working closely with customers to understand their
+							needs and provide solutions that meet or exceed their expectations,
+							while also achieving the company's sales goals.
+						</p>
+						<div class="roles">
+							<span class="role">Design</span>
+						</div>
+						<div class="author">
+							<div class="avatar">
+								<img src="./assets/images/avatar.png" alt="">
+							</div>
+							<div class="profile_info">
+								<h4>Jane mena</h4>
+								<p>Technical Staff</p>
+							</div>
+							<i class="fa-regular fa-arrow-right"></i>
+						</div>
+					</div>
+
+				</div>
+
+
 					<div class="pagination_section">
 						<button type="button" class="btn-sm"><i class="fa-regular fa-arrow-left"></i> Previous</button>
 						<div class="page_no">
@@ -354,8 +556,8 @@
 	</section>
 
 
-
-	<script src="./assets/js/script.js"></script>
+<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/emp-script.js"></script>
 </body>
 
 </html>

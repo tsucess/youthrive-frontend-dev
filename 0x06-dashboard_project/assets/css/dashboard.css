@@ -137,7 +137,7 @@ aside {
   width: 16%;
   height: 100vh;
   border-right: 1px solid #eff1f4;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -152,7 +152,7 @@ aside .nav_item {
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
-  width: 12rem;
+  width: 100%;
   height: 100vh;
 }
 
@@ -160,6 +160,14 @@ aside ul {
   display: flex;
   flex-flow: column;
   gap: 2rem;
+  width: 100%;
+}
+aside ul li{
+  /* width: 100%; */
+}
+aside ul li span{
+  width: 100%;
+  display: flex;
 }
 
 aside i {
@@ -185,19 +193,24 @@ aside .dropdown {
 aside .dropdown ul li {
   list-style: disc;
   margin-left: 3rem;
+ 
 }
 
 .active {
   padding: 0.4rem 0.1rem;
+  width: 100%;
   border-radius: 18px;
   opacity: 0px;
   background-color: #9a4c1e;
+  color: #ffffff;
 }
+
 .active > i,
 .active a {
   color: #ffffff !important;
 }
 
+aside .nav_item ul li span:hover,
 aside .nav_item ul li:hover > a,
 aside .nav_item ul li:hover > i,
 .dropdown .nav_item ul li:hover {
@@ -205,6 +218,10 @@ aside .nav_item ul li:hover > i,
   font-weight: bold;
 }
 
+.active:hover {
+  background-color: #9a4b1ef5;
+  color: #ffffff !important;
+}
 aside .logout {
   width: 12rem;
   border-top: 1px solid #eff1f4;
@@ -348,7 +365,6 @@ main .bottom_section .filter_row .search_col input {
 }
 
 /* Table section css  */
-
 main .table_section {
   width: 100%;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -421,6 +437,23 @@ main .table_section table tbody tr td span.status i {
   font-size: 0.5rem;
   margin-right: 0;
 }
+main .table_section table tbody tr td span.inactive {
+  background: #FFF2EA;
+  color: #F15046;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 1rem;
+  padding: 0.2rem 0.3rem;
+}
+main .table_section table tbody tr td span.inactive i {
+  color: #F15046;
+  font-size: 0.5rem;
+  margin-right: 0;
+}
 
 main .table_section table tbody tr td:nth-child(3) span {
   background: #f5f6f7;
@@ -448,6 +481,16 @@ main .table_section table tbody tr td:nth-child(6) span:nth-child(2) {
   background: #f7e8ef;
   color: #6a1039;
 }
+
+#employee_page .cards_section{
+  display: none;
+}
+
+
+
+
+
+
 
 main .pagination_section {
   display: flex;
@@ -506,6 +549,15 @@ main .pagination_section span.current {
     width: 70%;
   }
 }
+
+
+
+
+
+
+
+
+
 
 /* ROLES PAGE CSS  */
 main .cards_section {

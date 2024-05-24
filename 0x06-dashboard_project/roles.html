@@ -29,14 +29,16 @@
 							<a href="#">Dashboard</a>
 						</span>
 					</li>
-					<li class="active">
-						<i class="fa-solid fa-briefcase"></i>
-						<a href="./roles.html">Roles</a>
+					<li>
+						<span class="active">
+							<i class="fa-solid fa-briefcase"></i>
+							<a href="./roles.html">Roles</a>
+						</span>
 					</li>
 					<li>
 						<span id="drop">
 							<i class="fa-solid fa-users"></i>
-							<span>Employees</span>
+							Employees
 							<i class="fa-regular fa-arrow-down" id="arrow"></i>
 						</span>
 						<div class="dropdown" id="dropdown">
@@ -47,16 +49,22 @@
 						</div>
 					</li>
 					<li>
-						<i class="fa-solid fa-scroll"></i>
-						<a href="#">Payroll</a>
+						<span>
+							<i class="fa-solid fa-scroll"></i>
+							<a href="#">Payroll</a>
+						</span>
 					</li>
 					<li>
-						<i class="fa-solid fa-chart-pie"></i>
-						<a href="#">Reports</a>
+						<span>
+							<i class="fa-solid fa-chart-pie"></i>
+							<a href="#">Reports</a>
+						</span>
 					</li>
 					<li>
-						<i class="fa-solid fa-gear"></i>
-						<a href="#">Settings</a>
+						<span>
+							<i class="fa-solid fa-gear"></i>
+							<a href="#">Settings</a>
+						</span>
 					</li>
 				</ul>
 				<div class="logout">
@@ -109,7 +117,7 @@
 				<div class="filter_row">
 					<div class="search_col">
 						<i class="fa-regular fa-magnifying-glass"></i>
-						<input type="text" class="" value=""
+						<input type="text" id="data-search" class="" value=""
 							placeholder="Search Roles by Title, Teams or any related keywords">
 						<button type="button" class="btn-md btn-alt">
 							<i class="fa-regular fa-filter"></i>
@@ -139,10 +147,10 @@
 				</div>
 
 				<!-- CARDs SECTION  -->
-				<div class="cards_section">
-					<div class="card">
+				<div class="cards_section" id="role-data">
+					<div class="card data">
 						<div class="head">
-							<h3>Solution Sales Specialist</h3>
+							<h3>Social Media Manager</h3>
 							<div class="profile_dp">
 								<div class="avatars">
 									<img src="./assets/images/dp.png" alt="dp">
@@ -173,7 +181,6 @@
 						</p>
 						<div class="roles">
 							<span class="role">Marketing</span>
-							<span class="role">Product</span>
 							<span class="role">Engineering</span>
 							<span class="role">Design</span>
 						</div>
@@ -188,7 +195,7 @@
 							<i class="fa-regular fa-arrow-right"></i>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card data">
 						<div class="head">
 							<h3>Solution Sales Specialist</h3>
 							<div class="profile_dp">
@@ -221,8 +228,6 @@
 						</p>
 						<div class="roles">
 							<span class="role">Marketing</span>
-							<span class="role">Product</span>
-							<span class="role">Engineering</span>
 							<span class="role">Design</span>
 						</div>
 						<div class="author">
@@ -230,13 +235,13 @@
 								<img src="./assets/images/dp.png" alt="">
 							</div>
 							<div class="profile_info">
-								<h4>James Campion</h4>
+								<h4>James Cole</h4>
 								<p>Manager</p>
 							</div>
 							<i class="fa-regular fa-arrow-right"></i>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card data">
 						<div class="head">
 							<h3>Solution Sales Specialist</h3>
 							<div class="profile_dp">
@@ -271,22 +276,21 @@
 							<span class="role">Marketing</span>
 							<span class="role">Product</span>
 							<span class="role">Engineering</span>
-							<span class="role">Design</span>
 						</div>
 						<div class="author">
 							<div class="avatar">
 								<img src="./assets/images/avatar.png" alt="">
 							</div>
 							<div class="profile_info">
-								<h4>James Campion</h4>
-								<p>Manager</p>
+								<h4>Kate Magnamay</h4>
+								<p>IT Support Staff</p>
 							</div>
 							<i class="fa-regular fa-arrow-right"></i>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card data">
 						<div class="head">
-							<h3>Solution Sales Specialist</h3>
+							<h3>Virtual Assistant</h3>
 							<div class="profile_dp">
 								<div class="avatars">
 									<img src="./assets/images/dp.png" alt="dp">
@@ -316,9 +320,6 @@
 							while also achieving the company's sales goals.
 						</p>
 						<div class="roles">
-							<span class="role">Marketing</span>
-							<span class="role">Product</span>
-							<span class="role">Engineering</span>
 							<span class="role">Design</span>
 						</div>
 						<div class="author">
@@ -326,8 +327,8 @@
 								<img src="./assets/images/avatar.png" alt="">
 							</div>
 							<div class="profile_info">
-								<h4>James Campion</h4>
-								<p>Manager</p>
+								<h4>Jane mena</h4>
+								<p>Technical Staff</p>
 							</div>
 							<i class="fa-regular fa-arrow-right"></i>
 						</div>
@@ -427,32 +428,33 @@
 									</div>
 									<div class="profile_info">
 										<h4>Kate Magnamay</h4>
-										<p>Product Manger, Dashboard</p>
+										<p>Web Developer, Dashboard</p>
 									</div>
 								</div>
 								<input type="radio" name="assign-role">
 								<span class="checkmark"></span>
 							</div>
 						</label>
-						
-								
-						
-								
-					
-								
-					
-								
-							
+
+
+
+
+
+
+
+
+
 					</div>
 				</form>
 
 			</div>
 		</div>
 	</div>
+	
 
-
-
-	<script src="./assets/js/script.js"></script>
+	<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/role-script.js"></script>
+	
 </body>
 
 </html>
