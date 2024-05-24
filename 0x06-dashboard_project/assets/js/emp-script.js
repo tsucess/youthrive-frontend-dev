@@ -80,7 +80,7 @@ termSearch.onkeyup = () => {
 
 // PAGINATION 
 let currentPage = 1;
-let limit = 3;
+let limit = 4;
 
 let list = document.querySelectorAll('#terms .data');
 
