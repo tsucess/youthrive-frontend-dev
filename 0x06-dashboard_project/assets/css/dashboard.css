@@ -39,20 +39,19 @@ body {
   max-width: 100%;
 }
 
-
 ::-webkit-scrollbar {
   width: 0.4rem;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #eff1f4; 
+  background: #eff1f4;
   border-radius: 10px;
 }
 
@@ -71,6 +70,9 @@ body {
   background: #6a1039;
   color: #ffffff;
   cursor: pointer;
+}
+.btn-xlg i{
+  color: #ffffff;
 }
 
 .btn-lg {
@@ -123,10 +125,13 @@ body {
   color: #6a1039;
 }
 
-table tbody form input[type="checkbox"] {
+table input[type="checkbox"] {
+  cursor: pointer;
+  height: 1.2rem;
+  width: 1.2rem;
   background: #0e2354;
-  width: 2rem;
 }
+
 
 .dashboard_section {
   width: 100%;
@@ -162,10 +167,10 @@ aside ul {
   gap: 2rem;
   width: 100%;
 }
-aside ul li{
+aside ul li {
   /* width: 100%; */
 }
-aside ul li span{
+aside ul li span {
   width: 100%;
   display: flex;
 }
@@ -185,7 +190,7 @@ aside #drop {
 }
 
 aside .dropdown {
-  margin-top: 1rem; 
+  margin-top: 1rem;
   display: none;
   transition: all linear 3s;
 }
@@ -193,7 +198,6 @@ aside .dropdown {
 aside .dropdown ul li {
   list-style: disc;
   margin-left: 3rem;
- 
 }
 
 .active {
@@ -438,8 +442,8 @@ main .table_section table tbody tr td span.status i {
   margin-right: 0;
 }
 main .table_section table tbody tr td span.inactive {
-  background: #FFF2EA;
-  color: #F15046;
+  background: #fff2ea;
+  color: #f15046;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -450,7 +454,7 @@ main .table_section table tbody tr td span.inactive {
   padding: 0.2rem 0.3rem;
 }
 main .table_section table tbody tr td span.inactive i {
-  color: #F15046;
+  color: #f15046;
   font-size: 0.5rem;
   margin-right: 0;
 }
@@ -482,11 +486,153 @@ main .table_section table tbody tr td:nth-child(6) span:nth-child(2) {
   color: #6a1039;
 }
 
-#employee_page .cards_section{
-  display: none;
+/* GENERAL GRID VIEW CSS  */
+
+main .cards_section {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
+main .cards_section .card {
+  width: 48%;
+  border: 1px solid #e6e7ec;
+  padding: 2rem;
+  border-radius: 0.9375rem;
+  margin-bottom: 1rem;
+}
 
+main .cards_section .card .head {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  align-items: center;
+}
+
+#employee_page .cards_section {
+  display: none;
+  flex-flow: row wrap;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+#employee_page .cards_section label{
+  width: 48%;
+}
+
+#employee_page .cards_section .card {
+  width: 100%;
+  border: 1px solid #e6e7ec;
+  padding: 2rem;
+  border-radius: 0.9375rem;
+  margin-bottom: 1rem;
+}
+
+#employee_page .cards_section h4 {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  color: #42526d;
+  padding: 0.125rem 0.5rem;
+  line-height: 2rem;
+}
+
+#employee_page .cards_section .head h4 {
+  background: #f5f6f7;
+  border-radius: 1rem;
+}
+
+#employee_page .cards_section .head {
+  margin-bottom: 1rem;
+}
+#employee_page .cards_section h3 {
+  font-size: 1.3rem;
+  font-family: "Inter", sans-serif;
+}
+#employee_page .cards_section p {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  margin-top: 0.2rem;
+}
+
+#employee_page .cards_section .role_info {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+#employee_page .cards_section .role_info div > span.status {
+  background: #ecfdf3;
+  color: #027a48;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 1rem;
+  padding: 0.2rem 0.3rem;
+}
+
+#employee_page .cards_section .role_info div > span.status i {
+  color: #027a48;
+  font-size: 0.5rem;
+  margin-right: 0;
+}
+#employee_page .cards_section .role_info div > span.inactive {
+  background: #fff2ea;
+  color: #f15046;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 1rem;
+  padding: 0.2rem 0.3rem;
+}
+
+#employee_page .cards_section .role_info div > span.inactive i {
+  color: #f15046;
+  font-size: 0.5rem;
+  margin-right: 0;
+}
+
+#employee_page .cards_section .team {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+#employee_page .cards_section .team span {
+  background: #f5f6f7;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+#employee_page .cards_section .team span:nth-child(2) {
+  background: #f7e8ef;
+  color: #6a1039;
+}
+
+#employee_page .cards_section .author {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#employee_page .cards_section .author span:first-child {
+  display: flex;
+  flex-flow: row;
+  gap: 0.5rem;
+  align-items: center;
+}
 
 
 
@@ -550,39 +696,8 @@ main .pagination_section span.current {
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* ROLES PAGE CSS  */
-main .cards_section {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin-top: 1.5rem;
-}
 
-main .cards_section .card {
-  width: 48%;
-  border: 1px solid #e6e7ec;
-  padding: 2rem;
-  border-radius: 0.9375rem;
-  margin-bottom: 1rem;
-}
-
-main .cards_section .card .head {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  margin-bottom: 0.6rem;
-  align-items: center;
-}
 main .cards_section .card .head h3 {
   font-size: 1.225rem;
   font-weight: 900;
@@ -665,7 +780,7 @@ main .cards_section .card .author i {
 
 /* Modal css  */
 .modal {
-  background: #344054B2;
+  background: #344054b2;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -733,7 +848,6 @@ main .cards_section .card .author i {
   border-radius: 0.5rem;
   padding: 0.625rem 0.875rem;
   margin-bottom: 0.8rem;
-
 }
 .modal .modal_content .assign .search input {
   padding: 0.8rem;
@@ -744,21 +858,17 @@ main .cards_section .card .author i {
   border: none;
 }
 
-
-
 .modal .modal_content .assign .user-list {
   border: 1px solid #eff1f4;
   border-radius: 0.5rem;
   padding: 0.625rem 0.875rem;
   overflow-y: scroll;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   height: 22rem;
 }
 
-
 .modal .assign .user-list .user {
   display: flex;
-  /* gap: 1rem; */
   align-items: center;
   justify-content: space-between;
   border-radius: 0.5rem;
@@ -768,9 +878,9 @@ main .cards_section .card .author i {
 }
 
 .modal .assign .user-list .user:hover {
-  background: #FFF2EA;
+  background: #fff2ea;
 }
-.modal .assign .user-list .user:hover .profile_info p{
+.modal .assign .user-list .user:hover .profile_info p {
   color: #6a1039;
 }
 
@@ -782,17 +892,30 @@ main .cards_section .card .author i {
 .modal .assign .user-list .user .profile_info {
   line-height: 1.5rem;
 }
-.modal .assign .user-list .user .profile_info h4{
+.modal .assign .user-list .user .profile_info h4 {
   font-family: "Inter", sans-serif;
 }
-.modal .assign .user-list .user .profile_info p{
+.modal .assign .user-list .user .profile_info p {
   font-family: "Inter", sans-serif;
 }
+
+/* Custom Checkbox Button  */
+
+.custom-checkbox {
+  cursor: pointer;
+}
+
+/* Hide the browser's default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  cursor: pointer;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
 
 
 
 /* Custome Radio Button  */
-
 /* The container */
 .custom {
   display: block;
@@ -805,7 +928,7 @@ main .cards_section .card .author i {
 }
 
 /* Hide the browser's default checkbox */
-.custom input[type=radio] {
+.custom input[type="radio"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;

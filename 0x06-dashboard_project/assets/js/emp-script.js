@@ -57,6 +57,24 @@ termSearch.onkeyup = () => {
 }
 
 
+termSearch.onkeyup = () => {
+	//filter value
+	let filterValue = termSearch.value;
+	let item = document.querySelectorAll('#role-data .data');
+	for(let i = 0; i < item.length; i++){
+		let position = item[i].querySelectorAll('.data > div')[0];
+		let status = item[i].querySelectorAll('.data > div')[1];
+		let team = item[i].querySelectorAll('.data > div')[2];
+		let data = item[i].querySelectorAll('.data > div')[3];
+		if(team.innerHTML.indexOf(filterValue) > -1 || data.innerHTML.indexOf(filterValue) > -1 || position.innerHTML.indexOf(filterValue) > -1 || status.innerHTML.indexOf(filterValue) > -1){
+			item[i].style.display = '';
+		} else {
+			item[i].style.display = 'none';
+		}
+	}
+}
+
+
 
 
 //  addEventListener('keyup', filterNames);
