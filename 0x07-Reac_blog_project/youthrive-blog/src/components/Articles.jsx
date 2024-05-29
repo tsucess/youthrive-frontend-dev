@@ -1,8 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Axios from 'axios'
+const Articles = ({id}) => {
 
-const Articles = () => {
+const [post, getPost] = useState();
+
+useEffect(()=>{
+    Axios.get('https://jsonplaceholder.typicode.com/posts/'+{id})
+  .then(response =>  {
+    getPost(response.data)
+  });
+  console.log(id);
+
+
+  },[id])
+
   return (
     <div className="row ">
       <div className="col-md-8">

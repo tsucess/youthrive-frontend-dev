@@ -8,6 +8,7 @@ import App from './App.jsx'
 import About from './pages/About.jsx'
 import Blog from './pages/Blog.jsx'
 import Portfolio from './pages/Portfolio.jsx'
+import Post from './pages/Post.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/blog",
     element: <Blog />
+  },
+  {
+    path: "/singlepost/:id",
+    element: <Post />
   },
  
 ]);

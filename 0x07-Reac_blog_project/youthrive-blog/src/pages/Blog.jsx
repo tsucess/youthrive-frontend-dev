@@ -7,28 +7,20 @@ import Hero from "../components/Hero";
 import Axios from "axios"
 const Blog = () => {
 
-let [id, setId] = useState(null);
-let [titl, setTitle] = useState(null);
-let [data, setData] = useState(null);
+let [blog, setData] = useState();
 
-// fetch('https://jsonplaceholder.typicode.com/posts')
-// .then(response=>  response.json())
-// .then(posts=> console.log(posts))
-// .catch((err) => {
-//   console.error(err);
-  // fetch('https://jsonplaceholder.typicode.com/posts')
-// .then(response=>  response.json())
-// .then(posts=> console.log(posts))
-// });
 
  useEffect(() => {
-  Axios.get('https://jsonplaceholder.typicode.com/posts')
-  .then(response =>  {
-    setId(response.data.id);
-    setData(response.data);
-
+    fetch('https://jsonplaceholder.typicode.com/posts')
+.then(response=>  response.json())
+.then(posts=> setData(posts))
+.catch((err) => {
+    console.error(err);
   });
-
+  // Axios.get('https://jsonplaceholder.typicode.com/posts')
+  // .then(response =>  {
+  //   setData(response.data)
+  // });
 
  },[])
 
@@ -39,7 +31,7 @@ let [data, setData] = useState(null);
     <main className="container">
       <Header />
       <Hero title={title} info={info}/>
-      <Featured data={data} id = {id} titl = {titl} />
+      <Featured posts={blog} />
       <Footer />
     </main>
   );
