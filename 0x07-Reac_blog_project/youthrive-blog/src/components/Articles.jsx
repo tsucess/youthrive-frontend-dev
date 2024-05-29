@@ -15,7 +15,7 @@ const Articles = ({ dataId }) => {
         getPost(response.data);
       }
     ).catch(error => console.error(error));
-  }, []);
+  }, [dataId]);
 
   return (
     <div className="row ">

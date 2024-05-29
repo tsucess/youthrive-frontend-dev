@@ -20,10 +20,6 @@ const Blog = () => {
       .finally(
         setLoader(false)
       );
-    // Axios.get('https://jsonplaceholder.typicode.com/posts')
-    // .then(response =>  {
-    //   setData(response.data)
-    // });
   }, []);
 
   if (isLoading) {
