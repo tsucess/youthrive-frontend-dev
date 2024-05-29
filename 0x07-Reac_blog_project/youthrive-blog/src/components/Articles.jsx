@@ -3,6 +3,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 
 const Articles = ({ dataId }) => {
   const [postData, getPost] = useState();
@@ -24,7 +25,7 @@ const Articles = ({ dataId }) => {
         <article className="blog-post">
           <h2 className="blog-post-title mb-1">{postData && postData.title}</h2>
           <p className="blog-post-meta">
-            January 1, 2021 by <a href="#">Mark</a>
+            January 1, 2021 by <Link to="#">Mark</Link>
           </p>
 
           <p>{postData && postData.body}</p>
@@ -32,9 +33,9 @@ const Articles = ({ dataId }) => {
         </article>
 
         <nav className="blog-pagination" aria-label="Pagination">
-          <a className="btn btn-outline-primary rounded-pill" href="../blog">
+          <Link className="btn btn-outline-primary rounded-pill" to="../blog">
             back to blog page
-          </a>
+          </Link>
         </nav>
       </div>
 
@@ -53,22 +54,22 @@ const Articles = ({ dataId }) => {
             <h4 className="fst-italic">Archives</h4>
             <ol className="list-unstyled mb-0">
               <li>
-                <a href="#">March 2024</a>
+                <Link to="#">March 2024</Link>
               </li>
               <li>
-                <a href="#">February 2024</a>
+                <Link to="#">February 2024</Link>
               </li>
               <li>
-                <a href="#">January 2024</a>
+                <Link to="#">January 2024</Link>
               </li>
               <li>
-                <a href="#">December 2023</a>
+                <Link to="#">December 2023</Link>
               </li>
               <li>
-                <a href="#">November 2023</a>
+                <Link to="#">November 2023</Link>
               </li>
               <li>
-                <a href="#">October 2023</a>
+                <Link to="#">October 2023</Link>
               </li>
             </ol>
           </div>
@@ -77,13 +78,13 @@ const Articles = ({ dataId }) => {
             <h4 className="fst-italic">Social Media Page</h4>
             <ol className="list-unstyled">
               <li>
-                <a href="#">GitHub</a>
+                <Link to="#">GitHub</Link>
               </li>
               <li>
-                <a href="#">Twitter</a>
+                <Link to="#">Twitter</Link>
               </li>
               <li>
-                <a href="#">Facebook</a>
+                <Link to="#">Facebook</Link>
               </li>
             </ol>
           </div>

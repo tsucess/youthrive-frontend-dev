@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Featured = ({ posts }) => {
  
   return (
@@ -18,9 +18,9 @@ const Featured = ({ posts }) => {
                 <h3 className="mb-0">{index.title}...</h3>
                 <div className="mb-1 text-muted">Nov 12</div>
                 <p className="card-text mb-auto">Hello.</p>
-                <a href={`./singlepost/${index.id}`}  className="stretched-link">
+                <Link to={`../singlepost/${index.id}`}  className="stretched-link">
                   Continue reading
-                </a>
+                </Link>
               </div>
               <div className="col-auto d-none d-lg-block">
                 <svg
