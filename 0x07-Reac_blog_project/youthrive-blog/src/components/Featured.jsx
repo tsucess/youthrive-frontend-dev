@@ -13,7 +13,7 @@ const Featured = ({ posts }) => {
             <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div className="col p-4 d-flex flex-column position-static">
                 <strong className="d-inline-block mb-2 text-primary">
-                  Post
+                  Post {++key}
                 </strong>
                 <h3 className="mb-0">{index.title}...</h3>
                 <div className="mb-1 text-muted">Nov 12</div>

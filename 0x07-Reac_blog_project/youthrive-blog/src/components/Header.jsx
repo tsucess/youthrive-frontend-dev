@@ -7,14 +7,9 @@ const Header = () => {
     <div className="container">
       <header className="blog-header lh-1 py-3">
         <div className="row flex-nowrap justify-content-between align-items-center">
-          <div className="col-4 text-center">
+          <div className="col-12 text-end">
              <Link className="blog-header-logo text-dark" to="./">
               YouthriveBlog
-             </Link>
-          </div>
-          <div className="col-8 d-flex justify-content-end align-items-center">
-             <Link className="btn btn-sm btn-outline-secondary" to="#">
-              Sign up
              </Link>
           </div>
         </div>
