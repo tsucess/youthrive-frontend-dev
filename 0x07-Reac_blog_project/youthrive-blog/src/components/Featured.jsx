@@ -15,10 +15,10 @@ const Featured = ({ posts }) => {
                 <strong className="d-inline-block mb-2 text-primary">
                   Post
                 </strong>
-                <h3 className="mb-0">{index.title}</h3>
+                <h3 className="mb-0">{index.title}...</h3>
                 <div className="mb-1 text-muted">Nov 12</div>
                 <p className="card-text mb-auto">Hello.</p>
-                <a href={"./singlepost/"+index.id}  className="stretched-link">
+                <a href={`./singlepost/${index.id}`}  className="stretched-link">
                   Continue reading
                 </a>
               </div>

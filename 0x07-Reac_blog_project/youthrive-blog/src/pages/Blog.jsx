@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Featured from "../components/Featured";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Axios from "axios"
+// import Axios from "axios"
 const Blog = () => {
 
 let [blog, setData] = useState();

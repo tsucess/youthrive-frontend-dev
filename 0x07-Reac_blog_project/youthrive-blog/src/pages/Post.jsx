@@ -13,7 +13,7 @@ const Post = () => {
   return (
     <main className="container">
       <Header />
-      <Articles id={postId}/>
+        <Articles dataId={postId}/>
       <Footer />
     </main>
   );
