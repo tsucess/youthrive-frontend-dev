@@ -3,6 +3,9 @@ import React from 'react'
 import profileImg from '../../assets/images/profile-img.png';
 import profile from '../../assets/images/profile.png';
 import separator from '../../assets/images/separatorWhite.svg';
+import { FontAwesomeIcon } from '../../../../../../@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
 
 const Hero = () => {
   return (
@@ -21,7 +24,7 @@ const Hero = () => {
               </div>
               <div className="profile_icon">
                 <a href="#">
-                  <i className="fa-solid fa-at"></i>
+                  <FontAwesomeIcon icon={faBars} />
                 </a>
                 <a href="#">
                   <i className="fa-brands fa-github"></i>

@@ -386,11 +386,14 @@ main .skill-section {
 	text-align: center;
 	padding: 1rem 2rem;
 	padding-bottom: 4rem;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }
 
 main .skill-section .heading {
 	width: 50%;
-	margin: 3rem auto;
+	margin: 1rem auto;
 }
 
 main .skill-section .row .title {
