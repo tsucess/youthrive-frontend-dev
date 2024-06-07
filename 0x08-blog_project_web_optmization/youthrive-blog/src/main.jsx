@@ -6,9 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/style.css'
 import App from './App.jsx'
 import About from './pages/About.jsx'
-import Blog from './pages/Blog.jsx'
 import Portfolio from './pages/Portfolio.jsx'
-import Post from './pages/Post.jsx'
+import Login from './components/Login.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,13 +23,15 @@ const router = createBrowserRouter([
     path: "/portfolio",
     element: <Portfolio />
   },
+ 
   {
-    path: "/blog",
-    element: <Blog />
+    path: "/login",
+    element: <Login />
   },
+ 
   {
-    path: "/singlepost/:id",
-    element: <Post />
+    path: "*",
+    element: <ErrorPage />
   },
  
 ]);
