@@ -77,7 +77,7 @@ main .heading h2 {
 	position: relative;
 	display: flex;
 	flex-flow: row;
-	gap: 10rem;
+	gap: 11rem;
 }
 
 .nav-section .navbar .navbar-brand .logo-white,
@@ -90,7 +90,7 @@ main .heading h2 {
 
 .nav-section .navbar .nav-item {
 	position: absolute;
-	top: 3.4rem;
+	top: 5.1rem;
 	left: 0;
 	text-align: center;
 	width: 100%;
@@ -611,6 +611,9 @@ main .contact-section .btn-submit{
 
 /* SMALL SCREEN (ANDROID MOBILE) */
 @media screen and (min-width: 375px) {
+	.nav-section .navbar {
+		gap: 14rem;
+	}
 	main .hero-section .info {
 	  display: flex;
 	}
@@ -628,13 +631,20 @@ main .contact-section .btn-submit{
 	main .info-section .btn {
 	  margin-top: 4rem;
 	}
+	
+  }
+
+  @media screen and (min-width:425px){
+	.nav-section .navbar {
+		gap: 17rem;
+	}
   }
   
   
   /* MEDIUM SCREEN (TABLET) */
   @media screen and (min-width: 768px) {
 	.nav-section .navbar {
-	  gap: 25rem;
+	  gap: 38rem;
 	}
   
 	main .hero-section {

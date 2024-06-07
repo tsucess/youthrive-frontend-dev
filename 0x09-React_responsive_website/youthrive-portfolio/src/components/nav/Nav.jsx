@@ -2,9 +2,8 @@
 import React from "react";
 import logo from '../../assets/images/icon/logo.svg';
 import blogo from '../../assets/images/icon/logo-black.svg';
-import close from '../../assets/images/icon/closes.svg';
-import hamburger from '../../assets/images/icon/ham.png';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAt, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
   return (
@@ -16,8 +15,8 @@ const Nav = () => {
         </div>
       </div>
       <button type="button" className="toggle-btn">
-        <img src={close} className="toggle-icon-close" alt="" />
-        <img src={hamburger} className="toggle-icon-ham" alt="Ham-icon" />
+        <FontAwesomeIcon icon={faClose} className="toggle-icon-close text-white fs-1 m-3" />
+        <FontAwesomeIcon icon={faBars} className="toggle-icon-ham text-white fs-1 m-3" />
       </button>
       <div className="nav-item">
         <ul>
