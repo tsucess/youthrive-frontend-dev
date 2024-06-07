@@ -17,7 +17,23 @@ import css3Icon from './assets/images/skills/css3.svg';
 import sassIcon from './assets/images/skills/sass.svg';
 import jsIcon from './assets/images/skills/js.svg';
 import reactIcon from './assets/images/skills/react.svg';
+import bootstrapIcon  from './assets/images/skills/bootstrap.svg';
+import gitIcon from './assets/images/skills/git.svg';
+import figmaIcon from './assets/images/skills/figma.svg';
+import nodejsIcon from './assets/images/skills/nodejs.svg';
+import mysqlIcon from './assets/images/skills/mysql.svg';
+import mongoDBIcon from './assets/images/skills/mongo.png';
+import typescriptIcon from './assets/images/skills/ts.svg';
+import engIcon from './assets/images/skills/eng-lang.svg';
+import portIcon from './assets/images/skills/portugal.svg';
+import cppIcon from './assets/images/skills/c++.svg';
+import cIcon from './assets/images/skills/c-lang.svg';
 
+import arrowUp from './assets/images/icon/ic_baseline-double-arrow.svg';
+import faceBook from './assets/images/icon/facebook.svg';
+import linkedIcon from './assets/images/icon/linkedin.svg';
+import mailIcon from './assets/images/icon/mail.svg';
+import instaIcon from './assets/images/icon/insta.svg';
 
 
 function App() {
@@ -281,7 +297,7 @@ function App() {
               </div>
               <div className="skill">
                 <img
-                  src="../images/skills/bootstrap.svg"
+                  src={bootstrapIcon}
                   className="icon skill_icon"
                   alt="BOOTSTRAP"
                 />
@@ -289,7 +305,7 @@ function App() {
               </div>
               <div className="skill">
                 <img
-                  src="../images/skills/git.svg"
+                  src={gitIcon}
                   className="icon skill_icon"
                   alt="GIT"
                 />
@@ -297,7 +313,7 @@ function App() {
               </div>
               <div className="skill">
                 <img
-                  src="../images/skills/figma.svg"
+                  src={figmaIcon}
                   className="icon skill_icon"
                   alt="FIGMA"
                 />
@@ -312,7 +328,7 @@ function App() {
             <div className="skills">
               <div className="skill">
                 <img
-                  src="../images/skills/nodejs.svg"
+                  src={nodejsIcon}
                   className="icon skill_icon"
                   alt="NODEJS"
                 />
@@ -320,7 +336,7 @@ function App() {
               </div>
               <div className="skill">
                 <img
-                  src="../images/skills/mysql.svg"
+                  src={mysqlIcon}
                   className="icon skill_icon"
                   alt="MySQL"
                 />
@@ -328,7 +344,7 @@ function App() {
               </div>
               <div className="skill">
                 <img
-                  src="./assets/images/skills/mongo.png"
+                  src={mongoDBIcon}
                   className="icon skill_icon mongo"
                   alt="MONGODB"
                 />
@@ -336,7 +352,7 @@ function App() {
               </div>
               <div className="skill">
                 <img
-                  src="../images/skills/ts.svg"
+                  src={typescriptIcon}
                   className="icon skill_icon"
                   alt="TYPE SCRIPT"
                 />
@@ -351,7 +367,7 @@ function App() {
             <div className="skills">
               <div className="skill">
                 <img
-                  src="../images/skills/eng-lang.svg"
+                  src={engIcon}
                   className="icon skill_icon"
                   alt="ENGLISH LANGUAGE"
                 />
@@ -359,7 +375,7 @@ function App() {
               </div>
               <div className="skill">
                 <img
-                  src="../images/skills/portugal.svg"
+                  src={portIcon}
                   className="icon skill_icon"
                   alt="PORTUGAL"
                 />
@@ -367,7 +383,7 @@ function App() {
               </div>
               <div className="skill">
                 <img
-                  src="../images/skills/c++.svg"
+                  src={cppIcon}
                   className="icon skill_icon"
                   alt="C++ LANGUAGE"
                 />
@@ -375,7 +391,7 @@ function App() {
               </div>
               <div className="skill">
                 <img
-                  src="../images/skills/c-lang.svg"
+                  src={cIcon}
                   className="icon skill_icon"
                   alt="C LANGUAGE"
                 />
@@ -460,7 +476,7 @@ function App() {
             Poland.
           </p>
           <img
-            src="../assets/images/separatorBlack.svg"
+            src={bseparator}
             className="separator"
             alt=""
           />
@@ -483,7 +499,7 @@ function App() {
       <footer className="footer-section">
         <a href="#top">
           <img
-            src="../images/icon/ic_baseline-double-arrow.svg"
+            src={arrowUp}
             alt="arrow-up"
           />
           <p>BACK TO TOP</p>
@@ -491,22 +507,22 @@ function App() {
         <div className="footer-socials">
           <span>
             <a href="">
-              <img src="./assets/images/icon/facebook.svg" alt="FACEBOOK" />
+              <img src={faceBook} alt="FACEBOOK" />
             </a>
           </span>
           <span>
             <a href="">
-              <img src="../images/icon/linkedin.svg" alt="LINKEDIN" />
+              <img src={linkedIcon} alt="LINKEDIN" />
             </a>
           </span>
           <span>
             <a href="">
-              <img src="../images/icon/insta.svg" alt="INSTAGRAM" />
+              <img src={instaIcon} alt="INSTAGRAM" />
             </a>
           </span>
           <span>
             <a href="">
-              <img src="../images/icon/mail.svg" alt="MAIL" />
+              <img src={mailIcon} alt="MAIL" />
             </a>
           </span>
         </div>
