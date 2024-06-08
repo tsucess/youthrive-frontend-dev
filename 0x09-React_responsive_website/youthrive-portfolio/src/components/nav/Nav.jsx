@@ -1,11 +1,16 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import logo from '../../assets/images/icon/logo.svg';
 import blogo from '../../assets/images/icon/logo-black.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAt, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
+
+  let [toggle, setToggle] = useState(false);
+
+
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">
@@ -15,10 +20,15 @@ const Nav = () => {
         </div>
       </div>
       <button type="button" className="toggle-btn">
-        <FontAwesomeIcon icon={faClose} className="toggle-icon-close text-white fs-1 m-3" />
-        <FontAwesomeIcon icon={faBars} className="toggle-icon-ham text-white fs-1 m-3" />
+        <FontAwesomeIcon icon={faClose}
+        onClick={() => setToggle(false)}
+        className={toggle? "toggle-icon-close text-white fs-1 m-3 show" :"hide"} />
+
+        <FontAwesomeIcon icon={faBars}
+        onClick={() => setToggle(true)}
+         className={!toggle? "toggle-icon-ham text-white fs-1 m-3 show": "hide"} />
       </button>
-      <div className="nav-item">
+      <div className={toggle? "nav-item show": "nav-item hide"}>
         <ul>
           <li>
             <a href="#about">About Me</a>

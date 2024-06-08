@@ -41,13 +41,13 @@ const Hero = () => {
           <img src={separator} className="separator" alt="seperator" />
           <div className="social_icon">
             <a href="#">
-              <FontAwesomeIcon icon={faAt} className="text-white fs-1" />
+              <FontAwesomeIcon icon={faAt} className="text-dark fs-1" />
             </a>
             <a href="#">
-              <FontAwesomeIcon icon={faGithub} className="text-white fs-1" />
+              <FontAwesomeIcon icon={faGithub} className="text-dark fs-1" />
             </a>
             <a href="#">
-              <FontAwesomeIcon icon={faLinkedin} className="text-white fs-1" />
+              <FontAwesomeIcon icon={faLinkedin} className="text-dark fs-1" />
             </a>
           </div>
         </div>

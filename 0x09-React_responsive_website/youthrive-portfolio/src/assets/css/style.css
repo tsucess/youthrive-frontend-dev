@@ -69,7 +69,7 @@ main .heading h2 {
 	top: 0;
 	font-size: 0.75rem;
 	font-weight: 600;
-	z-index: 3;
+	z-index: 99;
 }
 
 .nav-section .navbar {
@@ -90,14 +90,14 @@ main .heading h2 {
 
 .nav-section .navbar .nav-item {
 	position: absolute;
-	top: 5.1rem;
+	top: 3.6rem;
 	left: 0;
 	text-align: center;
 	width: 100%;
 	background-color: #000000d2;
 	box-shadow: 0.02rem 0.1rem 0.5rem 0.02rem #686868;
-	display: none;
-	transition: .3s ease all;
+	/* display: none; */
+	transition: 1s linear;
 }
 
 .nav-section .navbar .nav-item ul {
@@ -118,29 +118,20 @@ main .heading h2 {
 
 .toggle-btn {
 	background-color: transparent;
+	color: white;
+	font-size: 1.6rem;
 }
 
-.toggle-btn > .toggle-icon-close {
-	display: none;
-}
 
-.toggle-btn:hover > .toggle-icon-close {
-	display: block;
-}
-
-.toggle-btn:hover > .toggle-icon-ham {
-	display: none;
-}
-
-.toggle-btn:hover + .nav-item {
+.show {
 	cursor: pointer;
 	display: block;
 }
 
-.toggle-btn:hover + .nav-item {
-	cursor: pointer;
-	display: block;
+.hide {
+	display: none;
 }
+
 
 .contact-btn {
 	width: 100%;
@@ -201,10 +192,11 @@ main .hero-section .hero-info h3 {
 	flex-flow: row wrap;
 	gap: 1.5rem;
 	margin-top: 0.5rem;
+/* color: #ffffff !important; */
 }
 
-.hero-section .social_icon a i{
-	color: #ffffff;
+.hero-section .social_icon a {
+	color: #ffffff !important;
 	font-size: 1.6rem;
 }
 
@@ -275,7 +267,7 @@ main .hero-bg .profile .profile_icon {
 	margin-top: -2.5rem;
 }
 
-main .hero-bg .profile .profile_icon a i {
+main .hero-bg .profile .profile_icon a  {
 	font-size: 1.5rem;
 	color: #e2dfdf;
 }
@@ -289,8 +281,8 @@ main .info-section {
 	background-image: url('../images/ITB.png');
 	background-repeat: no-repeat;
 	/* background-position: center; */
-	background-position: 50% 10%;
-	background-size: 80%;
+	background-position: 97% 5% !important;
+	background-size: 28% !important;
 	color: #ffffff;
 	text-align: center;
 	padding: 2rem;
@@ -384,7 +376,7 @@ main .skill-section {
 	/* background-image: radial-gradient(#ffffff, #fafafa); */
 	background-image: radial-gradient(#ffffff, #e2dfdf);			
 	text-align: center;
-	padding: 1rem 2rem;
+	padding: 3rem 2rem;
 	padding-bottom: 4rem;
 	display: flex;
 	flex-flow: column;
@@ -643,6 +635,11 @@ main .contact-section .btn-submit{
   
   /* MEDIUM SCREEN (TABLET) */
   @media screen and (min-width: 768px) {
+
+	.hero-section .social_icon a {
+		color: #000000 !important;
+		font-size: 1.6rem;
+	}
 	.nav-section .navbar {
 	  gap: 38rem;
 	}
@@ -757,6 +754,8 @@ main .contact-section .btn-submit{
 	main .skill-section .row .skills {
 	  flex-flow: row wrap;
 	  text-align: center;
+	padding-bottom: 4rem !important;
+	
 	}
   
 	main .skill-section .row .skills .skill {
@@ -860,6 +859,7 @@ main .contact-section .btn-submit{
   
   /* LARGE SCREEN  (LAPTOP)*/
   @media screen and (min-width: 1024px) {
+	
 	.nav-section {
 	  background: transparent;
 	  margin-top: 1rem;
@@ -888,7 +888,7 @@ main .contact-section .btn-submit{
 	  background-color: transparent;
 	  position: relative;
 	  top: 0;
-	  display: flex;
+	  display: flex !important;
 	  flex-flow: row;
 	  box-shadow: none;
 	  right: 0;
@@ -942,16 +942,17 @@ main .contact-section .btn-submit{
   
 	main .hero-section .info {
 	  margin-left: 0rem;
+	  margin-top: 0;
 	}
   
    
   
 	main .hero-section .hero-info p {
-	  font-size: 1.5625rem;
+	  font-size: 2.5625rem;
 	}
   
 	main .hero-section .hero-info h3 {
-	  font-size: 2rem;
+	  font-size: 2.5rem;
 	}
   
 	main .info-section {
@@ -978,6 +979,7 @@ main .contact-section .btn-submit{
   
 	main .skill-section .row .skills {
 	  gap: 1rem;
+	  padding-bottom: 4rem !important;
 	}
   }
   

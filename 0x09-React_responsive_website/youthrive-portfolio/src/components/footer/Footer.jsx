@@ -6,34 +6,37 @@ import linkedIcon from "../../assets/images/icon/linkedin.svg";
 import mailIcon from "../../assets/images/icon/mail.svg";
 import instaIcon from "../../assets/images/icon/insta.svg";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesUp, faArrowUp, faAt, faBars, faEnvelope, faMessage } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faGithub, faInstagram, faLinkedin, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 
 const Footer = () => {
   return (
     <footer className="footer-section">
       <a href="#top">
-        <img src={arrowUp} alt="arrow-up" />
+        <FontAwesomeIcon icon={faAnglesUp} className="text-white" />
         <p>BACK TO TOP</p>
       </a>
       <div className="footer-socials">
         <span>
           <a href="">
-            <img src={faceBook} alt="FACEBOOK" />
+          <FontAwesomeIcon icon={faFacebook} className="text-white fs-4" />
           </a>
         </span>
         <span>
           <a href="">
-            <img src={linkedIcon} alt="LINKEDIN" />
+          <FontAwesomeIcon icon={faLinkedin} className="text-white fs-4" />
           </a>
         </span>
         <span>
           <a href="">
-            <img src={instaIcon} alt="INSTAGRAM" />
+          <FontAwesomeIcon icon={faInstagram} className="text-white fs-4" />
           </a>
         </span>
         <span>
           <a href="">
-            <img src={mailIcon} alt="MAIL" />
+          <FontAwesomeIcon icon={faEnvelope} className="text-white fs-4" />
           </a>
         </span>
       </div>
