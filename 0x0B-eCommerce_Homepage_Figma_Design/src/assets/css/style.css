@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* Default CSS  XSMALL SCREEN (IPHONE)*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+* {
+	border: none;
+	padding: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+	line-height: 1.2;
+	font-family: "Montserrat", sans-serif;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+body {
+	max-width: 100%;
+}
+
+
+
+
+/* SMALL SCREEN (ANDROID MOBILE) */
+@media screen and (min-width: 375px) {
+	
+  }
+
+@media screen and (min-width:425px){
+	
+  }
+  
+  
+  /* MEDIUM SCREEN (TABLET) */
+@media screen and (min-width: 768px) {
+
+
+  }
+  
+  
+  /* LARGE SCREEN  (LAPTOP)*/
+  @media screen and (min-width: 1024px) {
+	
+  
+  }
+  
+  
+  /* XLARGE SCREEN */
+  @media screen and (min-width: 1440px) {
+	
+  }
+  
