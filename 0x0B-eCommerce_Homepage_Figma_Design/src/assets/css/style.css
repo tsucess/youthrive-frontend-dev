@@ -19,8 +19,8 @@ html {
   margin: 0 auto;
   box-sizing: border-box;
   line-height: 1.2;
-  font-family: "Montserrat", sans-serif;
   color: #000000;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -35,16 +35,37 @@ body {
   max-width: 100%;
 }
 
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header .title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+}
+
+.header .sub_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  color: #666666;
+}
+
 /* NAVBAR CSS  */
 .navbar {
   box-shadow: 0rem 0rem 0.3rem 0rem #636363;
   padding: 1rem;
 }
 
-.navbar .container-fluid {
-  /* display: flex;
+/* .navbar .container-fluid { */
+/* display: flex;
 	justify-content: center; */
-}
+/* } */
 
 .navbar .navbar-brand {
   display: flex;
@@ -55,6 +76,7 @@ body {
   font-weight: 700;
   width: 16rem;
   padding-left: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar .navbar-nav {
@@ -64,6 +86,10 @@ body {
   width: 55%;
   padding-left: 14rem;
   font-weight: 500;
+}
+
+.navbar .navbar-nav li a {
+  font-weight: 600;
 }
 
 .navbar .navbar-collapse {
@@ -80,7 +106,7 @@ body {
 
 /* HERO SECTION CSS  */
 .container_hero {
-  height: 100vh;
+  height: 90vh;
   background-image: url("../images/scandinavian-interior-mockup-wall-decal-background.png");
   background-position: center;
   background-size: cover;
@@ -96,31 +122,58 @@ body {
 }
 
 .container_hero .hero_info {
-  width: 90%;
+  width: 40.1875rem;
   height: 443px;
   top: 253px;
   left: 739px;
   border-radius: 10px 0px 0px 0px;
-  background: #FFF3E3;
+  background: #fff3e3;
   padding: 3rem;
   line-height: 2rem;
-
 }
 
 .hero_info h1 {
-	font-weight: 900;
-	color: #B88E2F;
-	width: 22rem;
-	margin: 0;
-	margin: 1rem 0;
+  font-weight: 900;
+  color: #b88e2f;
+  width: 22rem;
+  margin: 0;
+  margin: 1rem 0;
+}
+.hero_info p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  width: 34rem;
+}
+.hero_info p:first-child {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .btn_hero {
-  background-color: #B88E2F;
+  background-color: #b88e2f;
   border-radius: 0;
   color: #ffffff;
-
 }
+
+.container_gallery {
+  text-align: center;
+  padding: 4rem;
+  line-height: 3rem;
+}
+
+.container_gallery .label {
+  margin-top: 2rem;
+  font-size: 1,5rem;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+
+
+
 /* SMALL SCREEN (ANDROID MOBILE) */
 @media screen and (min-width: 375px) {
 }
