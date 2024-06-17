@@ -5,6 +5,7 @@ import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
 import Gallery from "./components/gallery/Gallery";
+import Products from "./components/products/Products";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hero />
       </header>
       <Gallery />
+      <Products />
       <Footer />
     </>
   );
