@@ -28,6 +28,9 @@ const Products = () => {
                 <small className="text-body-secondary"> Rp 3.500.000</small>
               </p>
             </div>
+            <div className="angle_tag percentage_tag">
+              -30%
+            </div>
             <div className="card_hover">
               <button type="button" className="btn btn-lg hover_btn">
                 Add to cart
@@ -85,6 +88,9 @@ const Products = () => {
                 <small className="text-body-secondary"> Rp 3.500.000</small>
               </p>
             </div>
+            <div className="angle_tag percentage_tag">
+              -50%
+            </div>
             <div className="card_hover">
               <button type="button" className="btn btn-lg hover_btn">
                 Add to cart
@@ -111,6 +117,9 @@ const Products = () => {
               <h5 className="card-title">Respira</h5>
               <p className="card-text">Outdoor bar table and stool</p>
               <p className="card-text">Rp 500.000</p>
+            </div>
+            <div className="angle_tag new_tag">
+              New
             </div>
             <div className="card_hover">
               <button type="button" className="btn btn-lg hover_btn">
@@ -172,6 +181,9 @@ const Products = () => {
                 <small className="text-body-secondary"> Rp 3.500.000</small>
               </p>
             </div>
+            <div className="angle_tag new_tag">
+              New
+            </div>
             <div className="card_hover">
               <button type="button" className="btn btn-lg hover_btn">
                 Add to cart
@@ -200,6 +212,9 @@ const Products = () => {
               <p className="card-text">
                 Rp 7.000.000
               </p>
+            </div>
+            <div className="angle_tag percentage_tag">
+              -50%
             </div>
             <div className="card_hover">
               <button type="button" className="btn btn-lg hover_btn">
@@ -230,6 +245,9 @@ const Products = () => {
                 Rp 500.000
                 <small className="text-body-secondary"> Rp 3.500.000</small>
               </p>
+            </div>
+            <div className="angle_tag new_tag">
+              New
             </div>
             <div className="card_hover">
               <button type="button" className="btn btn-lg hover_btn">
