@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Default CSS  XSMALL SCREEN (IPHONE)*/
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* .montserrat-<uniquifier> {
@@ -15,115 +14,128 @@ html {
 } */
 
 * {
-	border: none;
-	padding: 0;
-	margin: 0 auto;
-	box-sizing: border-box;
-	line-height: 1.2;
-	font-family: "Montserrat", sans-serif;	
-	color: #000000;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
 }
 
-
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul li {
-	list-style: none;
+  list-style: none;
 }
 
 body {
-	max-width: 100%;
+  max-width: 100%;
 }
-
 
 /* NAVBAR CSS  */
 .navbar {
-	box-shadow: 0rem 0rem 0.3rem 0rem #636363;
-	padding: 1rem;
+  box-shadow: 0rem 0rem 0.3rem 0rem #636363;
+  padding: 1rem;
 }
 
-
-.navbar .container-fluid{
-	/* display: flex;
+.navbar .container-fluid {
+  /* display: flex;
 	justify-content: center; */
-	
 }
 
 .navbar .navbar-brand {
-	display: flex;
-	flex-flow: row;
-	justify-content: space-around;
-	align-items: center;
-	font-size: 2.1rem;
-	font-weight: 700;
-	width: 16rem;
-	padding-left: 2rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+  width: 16rem;
+  padding-left: 2rem;
 }
 
 .navbar .navbar-nav {
-	display: flex;
-	flex-flow: row;
-	justify-content: end;
-	width: 55%;
-	padding-left: 14rem;
-	font-weight: 500;
+  display: flex;
+  flex-flow: row;
+  justify-content: end;
+  width: 55%;
+  padding-left: 14rem;
+  font-weight: 500;
 }
 
-
 .navbar .navbar-collapse {
-	width: 30%;
+  width: 30%;
 }
 
 .top-icon {
-	width: 25%;
-	display: flex;
-	flex-flow: row;
-	justify-content: space-evenly;
-	font-size: 1.4rem;
+  width: 25%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
 }
-
-
 
 /* HERO SECTION CSS  */
 .container_hero {
-	height: 100vh;
-	background-image: url("../images/scandinavian-interior-mockup-wall-decal-background.png");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	/* background-color: aqua; */
+  height: 100vh;
+  background-image: url("../images/scandinavian-interior-mockup-wall-decal-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: #B88E2F; */
+}
+.container_hero .row {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
 }
 
+.container_hero .hero_info {
+  width: 90%;
+  height: 443px;
+  top: 253px;
+  left: 739px;
+  border-radius: 10px 0px 0px 0px;
+  background: #FFF3E3;
+  padding: 3rem;
+  line-height: 2rem;
 
+}
 
+.hero_info h1 {
+	font-weight: 900;
+	color: #B88E2F;
+	width: 22rem;
+	margin: 0;
+	margin: 1rem 0;
+}
+
+.btn_hero {
+  background-color: #B88E2F;
+  border-radius: 0;
+  color: #ffffff;
+
+}
 /* SMALL SCREEN (ANDROID MOBILE) */
 @media screen and (min-width: 375px) {
-	
-  }
+}
 
-@media screen and (min-width:425px){
-	
-  }
-  
-  
-  /* MEDIUM SCREEN (TABLET) */
+@media screen and (min-width: 425px) {
+}
+
+/* MEDIUM SCREEN (TABLET) */
 @media screen and (min-width: 768px) {
+}
 
+/* LARGE SCREEN  (LAPTOP)*/
+@media screen and (min-width: 1024px) {
+}
 
-  }
-  
-  
-  /* LARGE SCREEN  (LAPTOP)*/
-  @media screen and (min-width: 1024px) {
-	
-  
-  }
-  
-  
-  /* XLARGE SCREEN */
-  @media screen and (min-width: 1440px) {
-	
-  }
-  
+/* XLARGE SCREEN */
+@media screen and (min-width: 1440px) {
+}
