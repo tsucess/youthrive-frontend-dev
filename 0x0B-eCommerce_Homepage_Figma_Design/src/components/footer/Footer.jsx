@@ -1,10 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import arrowUp from "../../assets/images/icon/ic_baseline-double-arrow.svg";
-import faceBook from "../../assets/images/icon/facebook.svg";
-import linkedIcon from "../../assets/images/icon/linkedin.svg";
-import mailIcon from "../../assets/images/icon/mail.svg";
-import instaIcon from "../../assets/images/icon/insta.svg";
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp, faArrowUp, faAt, faBars, faEnvelope, faMessage } from "@fortawesome/free-solid-svg-icons";
