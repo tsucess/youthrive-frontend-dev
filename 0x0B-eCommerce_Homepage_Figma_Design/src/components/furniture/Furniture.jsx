@@ -1,7 +1,11 @@
 
 const Furniture = () => {
   return (
-	<div>Furniture</div>
+	<section className="container-fluid container_furnitures">
+		<div className="row">
+			
+		</div>
+	</section>
   )
 }
 

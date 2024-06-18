@@ -13,9 +13,7 @@ const Hero = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis.
             </p>
-            <button type="button" className="btn btn-lg btn_hero mt-3">
-              BUY Now
-            </button>
+            <button type="button" className="btn btn-lg btn_hero mt-3">BUY Now</button>
           </div>
         </div>
       </div>

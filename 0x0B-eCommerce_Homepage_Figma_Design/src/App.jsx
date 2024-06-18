@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
 import Gallery from "./components/gallery/Gallery";
 import Products from "./components/products/Products";
+import Furniture from "./components/furniture/Furniture";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </header>
       <Gallery />
       <Products />
+      <Furniture />
       <Footer />
     </>
   );

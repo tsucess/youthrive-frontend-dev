@@ -211,13 +211,12 @@ body {
   padding-top: 0.9rem;
 }
 
-.percentage_tag{
+.percentage_tag {
   background: #e97171;
 }
 
 .new_tag {
-  background: #2EC1AC;
-
+  background: #2ec1ac;
 }
 
 .hover_btn {
@@ -267,6 +266,69 @@ body {
 
 .container_products .card-title {
   font-weight: 700;
+}
+
+.container_furnitures {
+  padding: 2rem 0;
+  /* width: 80%; */
+}
+
+.container_furnitures .row {
+  background-image: url("../images/Images.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container_footer {
+  border-top: 1px solid #0000002b;
+  font-family: "Poppins", sans-serif;
+}
+
+.container_footer a h5 {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 700;
+ 
+  font-size: 24px;
+  line-height: 36px;
+  text-align: left;
+}
+.container_footer h5 {
+  color: #9f9f9f;
+}
+
+.container_footer ul li a {
+  line-height: 3rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+.container_footer .addr {
+  color: #9f9f9f;
+}
+
+.container_footer .newsletter {
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  color: #9f9f9f;
+}
+.container_footer .newsletter:focus {
+  outline: none;
+
+}
+.container_footer .newsletter-btn {
+  width: 10rem;
+  background-color: transparent;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
 }
 
 /* SMALL SCREEN (ANDROID MOBILE) */
