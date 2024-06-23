@@ -1,0 +1,16 @@
+.container_services {
+	background: #FAF3EA;
+	padding: 4rem 2rem;
+	text-align: center;
+
+}
+
+
+.container_services .service {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 0;
+}
+.container_services .service_info {
+	margin: 0;
+}

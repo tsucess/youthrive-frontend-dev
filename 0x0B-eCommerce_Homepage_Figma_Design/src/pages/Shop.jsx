@@ -3,9 +3,8 @@
 import React from "react";
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
-import Hero from "../components/hero/Hero";
 import Products from "../components/products/Products";
-
+import Services from "../components/services/Services";
 
 function Shop() {
   return (
@@ -14,6 +13,7 @@ function Shop() {
         <Nav />
       </header>
       <Products />
+      <Services />
       <Footer />
     </>
   );
