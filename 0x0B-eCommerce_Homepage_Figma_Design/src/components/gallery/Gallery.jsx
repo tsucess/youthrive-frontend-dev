@@ -1,6 +1,10 @@
 import living from "../../assets/images/image100.png";
 import bedroom from "../../assets/images/image101.png";
 import dinning from "../../assets/images/image106.png";
+
+
+
+
 const Gallery = () => {
   return (
     <section className="container-fluid container_gallery">

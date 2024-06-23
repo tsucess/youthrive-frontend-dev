@@ -308,6 +308,12 @@ body {
   display: flex;
   align-items: end;
   padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-image: url(http://localhost:5173/src/assets/images/rectangle1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container_slider .show-image div {
@@ -332,9 +338,23 @@ body {
   width: 100%;
   background-color: #3a3a3a;
 }
+.container_slider .slide {
+  width: 372px;
+  height: 486px;
+  flex-shrink : 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
 .container_slider .controls {
   display: flex;
-  background-color: #3a3a3a;
+  width: 390px;
+  background-color: #000000 !important;
+  position: absolute;
+  top: 15rem;
+  z-index: 7;
 }
 
 .container_slider .controls .arrow {
@@ -344,17 +364,17 @@ body {
   background-color: #e4e4e457;
   text-align: center;
   padding: 0.4rem;
-  position: absolute;
   box-shadow: 0 0 0.3rem 0rem #5a5a5a69;
   color: #b88e2f;
-  top: 15rem;
+  position: absolute;
 }
+
 .container_slider .controls .left {
   left: -1rem;
 }
 
 .container_slider .controls .right {
-  right: 6rem;
+  right: 0rem;
 }
 
 .container_slider .slideIndicators {
@@ -382,7 +402,6 @@ body {
 
 .container_furnitures {
   padding: 2rem 0;
-  /* width: 80%; */
 }
 
 .container_furnitures .wallpaper {
